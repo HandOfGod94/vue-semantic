@@ -1,0 +1,1788 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"impor",
+				"import\t? "
+			],
+			[
+				"imp",
+				"import\t? "
+			],
+			[
+				"vue",
+				"'vue'\t? "
+			],
+			[
+				"For",
+				"ForceRollback"
+			],
+			[
+				"ForceR",
+				"ForceRollback=\"true"
+			],
+			[
+				"colla",
+				"collapse"
+			],
+			[
+				"frame",
+				"frames"
+			],
+			[
+				"even",
+				"event"
+			],
+			[
+				"tag",
+				"target"
+			],
+			[
+				"notifica",
+				"notificationFrame"
+			],
+			[
+				"span",
+				"spanElement"
+			],
+			[
+				"getE",
+				"getElementsByClassName\t(pgl-shell.js)"
+			],
+			[
+				"hel",
+				"helpUrlCopy"
+			],
+			[
+				"help",
+				"helpUrlCreate"
+			],
+			[
+				"notificati",
+				"notificationFrame\t{} "
+			],
+			[
+				"cur",
+				"currentDate"
+			],
+			[
+				"ignroe",
+				"ignore_whitespace\t(Sublimerge 3.sublime-settings)"
+			],
+			[
+				"ABPP",
+				"ABPPMGR_2016"
+			],
+			[
+				"WWF",
+				"WWFMGR_2016"
+			],
+			[
+				"data",
+				"dataType"
+			],
+			[
+				"I1",
+				"I18N_DATETIME"
+			],
+			[
+				"JAVA",
+				"JAVA_OPTIONS"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": ".tern-project",
+			"settings":
+			{
+				"buffer_size": 170,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "",
+			"file": "src/elements/Header/Header.jsx",
+			"file_size": 0,
+			"file_write_time": 131676560096963687,
+			"settings":
+			{
+				"buffer_size": 0,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/User/abpp.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Java/Ant.sublime-build",
+					""
+				],
+				[
+					"Packages/Java/JavaC.sublime-build",
+					""
+				],
+				[
+					"Packages/User/abpp.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/User/abpp.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 517.0,
+		"last_filter": "settigs",
+		"selected_items":
+		[
+			[
+				"settigs",
+				"Preferences: Settings"
+			],
+			[
+				"settings",
+				"Preferences: Settings"
+			],
+			[
+				"setting",
+				"Preferences: Settings"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"browse",
+				"Preferences: Browse Packages"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"enab",
+				"Package Control: Enable Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings"
+			],
+			[
+				"format",
+				"ESLint Formatter: Format this file"
+			],
+			[
+				"regre",
+				"RegReplace: Settings"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"keybind",
+				"Preferences: Key Bindings"
+			],
+			[
+				"keybin",
+				"Preferences: Key Bindings"
+			],
+			[
+				"convert spac",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"forma",
+				"ESLint Formatter: Format this file"
+			],
+			[
+				"enal",
+				"Package Control: Enable Package"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"select",
+				"UI: Select Color Scheme"
+			],
+			[
+				"shellcom",
+				"ShellCommand"
+			],
+			[
+				"shell",
+				"ShellCommand"
+			],
+			[
+				"change",
+				"Git: Change Branch"
+			],
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"commit",
+				"Git: Commit"
+			],
+			[
+				"compare",
+				"GitGutter: Compare Against HEAD"
+			],
+			[
+				"git add ",
+				"Git: Add All"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"she",
+				"ShellCommand"
+			],
+			[
+				"sublimemer",
+				"Sublimerge: Compare to Revision..."
+			],
+			[
+				"chna",
+				"Git: Change Branch"
+			],
+			[
+				"colro",
+				"UI: Select Color Scheme"
+			],
+			[
+				"compare revi",
+				"Sublimerge: Compare to Revision..."
+			],
+			[
+				"log",
+				"Git: Log Current File"
+			],
+			[
+				"chang ",
+				"Git: Change Branch"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"shel",
+				"ShellCommand"
+			],
+			[
+				"git push",
+				"Git: Push Current Branch"
+			],
+			[
+				"git add al",
+				"Git: Add All"
+			],
+			[
+				"new br",
+				"Git: New Branch"
+			],
+			[
+				"unsta",
+				"Git: Reset (unstage) All"
+			],
+			[
+				"git pull",
+				"Git: Pull"
+			],
+			[
+				"branc",
+				"Git: Change Branch"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"open",
+				"Git: Open Modified Files"
+			],
+			[
+				"git push cur",
+				"Git: Push Current Branch"
+			],
+			[
+				"git log",
+				"Git: Log Current File"
+			],
+			[
+				"git ad",
+				"Git: Add All"
+			],
+			[
+				"new bra",
+				"Git: New Branch"
+			],
+			[
+				"change ",
+				"Git: Change Branch"
+			],
+			[
+				"GIT STATU",
+				"Git: Status"
+			],
+			[
+				"git pul",
+				"Git: Pull"
+			],
+			[
+				"git new b",
+				"Git: New Branch"
+			],
+			[
+				"unstage",
+				"Git: Reset (unstage) All"
+			],
+			[
+				"pull",
+				"Git: Pull"
+			],
+			[
+				"add ",
+				"Git: Add All"
+			],
+			[
+				"editor",
+				"Project: Edit Project"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"java",
+				"Set Syntax: Java"
+			],
+			[
+				"opne",
+				"Git: Open Modified Files"
+			],
+			[
+				"stash ap",
+				"Git: Stash Apply"
+			],
+			[
+				"modif",
+				"Git: Open Modified Files"
+			],
+			[
+				"modifie",
+				"Git: Open Modified Files"
+			],
+			[
+				"git change",
+				"GitGutter: Goto Next Change"
+			],
+			[
+				"open ",
+				"Git: Open Modified Files"
+			],
+			[
+				"isntal",
+				"Package Control: Install Package"
+			],
+			[
+				"the",
+				"UI: Select Theme"
+			],
+			[
+				"select h",
+				"UI: Select Theme"
+			],
+			[
+				"ind",
+				"IndentX: Indent"
+			],
+			[
+				"unind",
+				"IndentX: Unindent"
+			],
+			[
+				"unin",
+				"IndentX: Unindent"
+			],
+			[
+				"UNIN",
+				"IndentX: Unindent"
+			],
+			[
+				"in",
+				"IndentX: Indent"
+			],
+			[
+				"Unin",
+				"IndentX: Unindent"
+			],
+			[
+				"XML",
+				"Set Syntax: XML"
+			],
+			[
+				"INDE",
+				"IndentX: Indent"
+			],
+			[
+				"push bra",
+				"Git: Push Current Branch"
+			],
+			[
+				"git commi",
+				"Git: Commit"
+			],
+			[
+				"git add a",
+				"Git: Add All"
+			],
+			[
+				"git statu",
+				"Git: Status"
+			],
+			[
+				"reset",
+				"Git: Reset (unstage) Current File"
+			],
+			[
+				"colorshe",
+				"UI: Select Color Scheme"
+			],
+			[
+				"git pu",
+				"Git: Pull"
+			],
+			[
+				"com",
+				"Sublimerge: Compare to Clipboard"
+			],
+			[
+				"compare to re",
+				"Sublimerge: Compare to Revision..."
+			],
+			[
+				"sublime",
+				"Sublimerge: Compare to Clipboard"
+			],
+			[
+				"selec t",
+				"UI: Select Color Scheme"
+			],
+			[
+				"them",
+				"UI: Select Theme"
+			],
+			[
+				"bra",
+				"Git: Change Branch"
+			],
+			[
+				"git commit",
+				"Git: Commit"
+			],
+			[
+				"git addl",
+				"Git: Add All"
+			],
+			[
+				"stat",
+				"Indexing Status"
+			],
+			[
+				"add al",
+				"Git: Add All"
+			],
+			[
+				"git add",
+				"Git: Add Selected Hunk"
+			],
+			[
+				"git settings",
+				"Preferences: GitGutter Settings"
+			],
+			[
+				"diff",
+				"Git: Open Modified Files"
+			],
+			[
+				"comma",
+				"ShellCommand"
+			],
+			[
+				"command",
+				"ShellCommand"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"select ",
+				"UI: Select Color Scheme"
+			],
+			[
+				"comapre",
+				"Sublimerge: Compare to Clipboard"
+			],
+			[
+				"gi",
+				"Git: Pull"
+			],
+			[
+				"gitp",
+				"Git: Pull"
+			],
+			[
+				"git sta",
+				"Git: Status"
+			],
+			[
+				"push cu",
+				"Git: Push Current Branch"
+			],
+			[
+				"compar",
+				"GitGutter: Compare Against HEAD"
+			],
+			[
+				"git reste ",
+				"Git: Reset (hard) HEAD"
+			],
+			[
+				"new bu",
+				"Build: New Build System"
+			],
+			[
+				"buid",
+				"Build With: abpp"
+			],
+			[
+				"newbui",
+				"Build: New Build System"
+			],
+			[
+				"build sts",
+				"Build: New Build System"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"build",
+				"Build: New Build System"
+			],
+			[
+				"superant",
+				"Preferences: Super Ant – Settings"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"BUILD",
+				"Build With: Ant"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"ant",
+				"Set Syntax: Ant"
+			],
+			[
+				"sublimerge compare",
+				"Sublimerge: Compare to Revision..."
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"stash li",
+				"Git: Stash List"
+			],
+			[
+				"STAT",
+				"Git: Status"
+			]
+		],
+		"width": 720.0
+	},
+	"console":
+	{
+		"height": 260.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/1021124/workspace/vuespace/semantic-class-vue",
+		"/C/Users/1021124/workspace/vuespace/semantic-class-vue/src",
+		"/C/Users/1021124/workspace/vuespace/semantic-class-vue/src/elements",
+		"/C/Users/1021124/workspace/vuespace/semantic-class-vue/src/elements/Header"
+	],
+	"file_history":
+	[
+		"/C/Users/1021124/workspace/vuespace/semantic-class-vue/src/elements/Header/Header.jsx",
+		"/C/Users/1021124/AppData/Roaming/Sublime Text 3/Packages/User/Tern.sublime-settings",
+		"/C/Users/1021124/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/tern.py",
+		"/C/Users/1021124/workspace/vuespace/semantic-class-vue/src/App.vue",
+		"/C/Users/1021124/workspace/vuespace/semantic-class-vue/src/elements/Divider/SeDivider.jsx",
+		"/C/Users/1021124/AppData/Roaming/Sublime Text 3/Packages/User/reg_replace_rules.sublime-settings",
+		"/C/Users/1021124/workspace/vuespace/semantic-class-vue/index.html",
+		"/C/Users/1021124/AppData/Roaming/Sublime Text 3/Packages/Emmet/Default (Windows).sublime-keymap",
+		"/C/Users/1021124/AppData/Roaming/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+		"/C/Users/1021124/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/1021124/workspace/vuespace/semantic-class-vue/.tern-project",
+		"/C/Users/1021124/workspace/vuespace/semantic-class-vue/semantic-class-vue.subilme-project.sublime-project",
+		"/C/Users/1021124/workspace/vuespace/semantic-class-vue/node_modules/semantic-ui-less/package.js",
+		"/C/Users/1021124/workspace/vuespace/semantic-class-vue/node_modules/semantic-ui-less/package.json",
+		"/C/Users/1021124/workspace/vuespace/bookorder-vue-jsx/build/webpack.base.js",
+		"/C/Users/1021124/workspace/vuespace/semantic-class-vue/node_modules/semantic-ui-less/semantic.less",
+		"/C/Users/1021124/workspace/vuespace/bookorder-vue-jsx/build/utils.js",
+		"/C/Users/1021124/workspace/vuespace/bookorder-vue-jsx/build/server.js",
+		"/C/Users/1021124/workspace/vuespace/bookorder-vue-jsx/build/log-plugin.js",
+		"/C/Users/1021124/workspace/vuespace/bookorder-vue-jsx/build/config.js",
+		"/C/Users/1021124/workspace/vuespace/bookorder-semantic/node_modules/semantic-ui-css/semantic.css",
+		"/C/Users/1021124/workspace/mlspace/livy-experiment/README.txt",
+		"/C/Softwares/webworks/2018.1.0.0/config/properties/abpp.properties",
+		"/C/abpp-git-repos/master/abpp/services/bpe/src/com/i2/ui/pgl/laf/i2/I2PageGroup.hij",
+		"/C/Users/1021124/Documents/MyJabberFiles/sudheer.ponooru@jda.com/setWLSStartupVars.cmd",
+		"/C/Softwares/webworks/2018.1.0.0/config/JDADomain/config/config.xml",
+		"/C/Softwares/webworks/2018.1.0.0/config/bin/platform/startManagedWebworksServer.cmd",
+		"/C/Softwares/webworks/2018.1.0.0/config/bin/platform/startWLSServer.cmd",
+		"/C/Softwares/webworks/2018.1.0.0/config/bin/platform/setWLSStartupVars.cmd",
+		"/C/Softwares/webworks/2018.1.0.0/config/installerVars.cmd",
+		"/C/Softwares/webworks/2018.1.0.0/config/JDADomain/init-info/startscript.xml",
+		"/C/Softwares/webworks/2018.1.0.0/config/JDADomain/servers/JDAServer/security/boot.properties",
+		"/C/Softwares/webworks/2018.1.0.0/config/JDADomain/startManagedWebLogic_readme.txt",
+		"/C/Softwares/webworks/2018.1.0.0/config/JDADomain/config/startup/readme.txt",
+		"/C/Softwares/webworks/2018.1.0.0/config/properties/lineitem_binding.xml",
+		"/C/Softwares/webworks/2018.1.0.0/config/properties/jdamdc.xml",
+		"/C/Softwares/webworks/2018.1.0.0/config/properties/startup.xml",
+		"/C/Softwares/webworks/2018.1.0.0/config/properties/wsit-client.xml",
+		"/C/Softwares/webworks/2018.1.0.0/config/properties/webworks_config.xml",
+		"/C/Softwares/webworks/2018.1.0.0/config/properties/instanceEntries.xml",
+		"/C/Softwares/webworks/2018.1.0.0/config/properties/foundation.properties",
+		"/C/Softwares/webworks/2018.1.0.0/config/properties/datetime_binding.xml",
+		"/C/Softwares/webworks/2018.1.0.0/config/properties/ds_webworks_config.xml",
+		"/C/Softwares/webworks/2018.1.0.0/config/properties/customerorder_binding.xml",
+		"/C/Softwares/webworks/2018.1.0.0/config/properties/builtin_binding.xml",
+		"/C/Softwares/webworks/2018.1.0.0/config/bin/platform/postAbppRequest.bat",
+		"/C/Softwares/webworks/2018.1.0.0/config/bin/platform/setupAbppEnv.bat",
+		"/C/abpp-git-repos/master/abpp/services/bpe/src/com/i2/ui/pgl/laf/i2/I2Table.hij",
+		"/C/abpp-git-repos/master/abpp/scripts/build/platform/base/common/javascript/pgl-page.js",
+		"/C/Softwares/abpp/2016.1.0.32/web/base/common/javascript/pgl-page.js",
+		"/C/Softwares/abpp/2018.1/web/base/common/javascript/pgl-page.js",
+		"/C/abpp-git-repos/master/abpp/scripts/bpe/pgl/build_pgl.bat",
+		"/C/Softwares/abpp/2018.1/web/base/common/javascript/pgl-stub.js",
+		"/C/abpp-git-repos/master/abpp/services/bpe/projects/bpe-services/cfg/xservice/DATA_QUALITY/navlinks.xml",
+		"/C/abpp-git-repos/master/abpp/scripts/build/plbuild.cmd",
+		"/C/abpp-git-repos/master/abpp/scripts/build/platform/cfg/xservice/bpeui/workflow/MultiSort.pgl",
+		"/C/abpp-git-repos/master/abpp/services/bpe/src/com/i2/x2/util/i18n/Localizer.java",
+		"/C/Users/1021124/AppData/Local/Microsoft/Windows/INetCache/Content.Outlook/DJP0O01O/dfxuiOMFromDB (003).xml",
+		"/C/Softwares/webworks/2018.1.0.0/config/webworks.common.vars.cmd",
+		"/C/Softwares/webworks/2018.1.0.0/config/bin/platform/boot.properties",
+		"/C/abpp-git-repos/master/abpp/services/bpe/projects/bpe-services/cfg/xservice/bpeui/workflow/MultiSort.pgl",
+		"/C/abpp-git-repos/master/abpp/services/bpe/projects/bpe-services/cfg/xservice/approval/event-descriptors/approval_events.xml",
+		"/C/abpp-git-repos/master/abpp/tutorial/ABPPTestCases/jolscript/PGL/cfg/xservice/bpeui/workflow/MultiSort_pgl.java",
+		"/C/abpp-git-repos/master/abpp/scripts/build/platform/cfg/xservice/USER_SECURITY/workflows/UserGroups/UserGroups.xml",
+		"/C/abpp-git-repos/master/abpp/scripts/build/plbuild.xml",
+		"/C/abpp-git-repos/master/abpp/scripts/bpe/pgl/build_pgl.xml",
+		"/C/abpp-git-repos/master/abpp/scripts/build/platform/cfg/xservice/bpeui/workflow/MultiSort.xml",
+		"/C/abpp-git-repos/master/abpp/services/bpe/projects/bpe-services/cfg/xservice/webworks/rules/webworksImplRules.xml",
+		"/C/Users/1021124/workspace/mlspace/livy-experiment/hadoop-3.0.0/etc/hadoop/core-site.xml",
+		"/C/abpp-git-repos/master/abpp/services/bpe/projects/bpe-services/cfg/xservice/platform/rules/userMigrationUtil.xml",
+		"/C/abpp-git-repos/master/abpp/services/bpe/projects/bpe-services/cfg/xservice/dataupload/rules/uploadRules.xml",
+		"/C/abpp-git-repos/master/abpp/services/bpe/src/com/i2/xservice/webworks/CSMSecurityServices.java",
+		"/C/abpp-git-repos/master/abpp/services/bpe/src/com/i2/xservice/userportal/util/CSMUtil.java",
+		"/C/abpp-git-repos/master/abpp/scripts/build/platform/cfg/xservice/webworks/rules/webworksImplRules.xml",
+		"/C/abpp-git-repos/master/abpp/services/bpe/src/com/i2/xservice/platform/CUAUtil.java",
+		"/C/Softwares/webworks/2018.1.0.0/config/properties/log4j2.xml",
+		"/C/abpp-git-repos/master/abpp/scripts/build/platform/cfg/xservice/platform/workflows/shell/Shell.xml",
+		"/C/Softwares/webworks/2018.1.0.0/config/bin/platform/debugrequest.xml",
+		"/C/Softwares/webworks/2018.1.0.0/config/platform/abpp/build_info.xml",
+		"//md1npdvfqat01/JDA/v2018.1/CM_SA_BATCH/WWF/install/installer.properties",
+		"//md1npdvfqat01/JDA/v2018.1/CM_SA_BATCH/WWF/config/properties/dbconnections.properties",
+		"/C/Softwares/webworks/jdaplatform-2018.1.0.0-windows/readmefirst.txt",
+		"/C/Softwares/webworks/2018.1.0.0/install/installer.properties",
+		"/C/abpp-git-repos/master/abpp/scripts/build/platform/cfg/xservice/platform/rules/userMigrationUtil.xml",
+		"/C/Users/1021124/Desktop/appserver.log",
+		"//md1npdvfqat01/JDA/v2018.1/CM_SA_BATCH/WWF/config/properties/log4j2.xml",
+		"/C/Softwares/webworks/2018.1.0.0/config/logs/appserver.log",
+		"//md1npdvfqat01/JDA/v2018.1/CM_SA_BATCH/WWF/config/installerVars.cmd",
+		"//md1npdvfqat01/JDA/v2018.1/CM_SA_BATCH/WWF/config/properties/abpp.properties",
+		"/C/Users/1021124/workspace/reactspace/bookorder-mobx/src/core/components/navigation/MBanner.jsx",
+		"/C/Users/1021124/workspace/reactspace/bookorder-final/src/core/components/navigation/MTopBar.jsx",
+		"/C/Users/1021124/workspace/reactspace/semantic-bookorder-redux-eslint/src/App.js",
+		"/C/Users/1021124/workspace/reactspace/bookorder-final/src/App.jsx",
+		"/C/Users/1021124/workspace/reactspace/bookorder-bootstrap/src/core/components/navigation/MBanner.jsx",
+		"/C/Users/1021124/workspace/reactspace/bookorder-bootstrap/src/core/components/MShell.jsx",
+		"/C/Users/1021124/workspace/reactspace/bookorder-bootstrap/src/App.jsx",
+		"/C/stack/OracleDB/db/product/12.2.0.1/deinstall/deinstall.xml",
+		"/C/abpp-git-repos/master/abpp/services/bpe/projects/bpe-services/cfg/xservice/platform/rules/UtilHelper.xml",
+		"/C/stack/OracleDB/db/product/12.2.0.1/deinstall/deinstall.bat",
+		"/C/abpp-git-repos/master/abpp/scripts/build/platform/cfg/xservice/platform/rules/UtilHelper.xml",
+		"/C/Softwares/abpp/2018.1/web/base/skins/jda/css/platform.css",
+		"/C/abpp-git-repos/master/abpp/scripts/bpe/pgl/build/sass/platform.css",
+		"/C/Softwares/abpp/2018.1/studio/projects/UltimateProject90_2/cfg/xservice/myService/workflows/popup2_searchOrder.xml",
+		"/C/Users/1021124/AppData/Local/Microsoft/Windows/INetCache/Content.Outlook/DJP0O01O/dfxuiOMFromDB (003).pgl",
+		"/C/Users/1021124/workspace/vuespace/bookorder-vuetify-phase2/src/main.js",
+		"/C/Users/1021124/workspace/vuespace/bookorder-vuetify-phase2/src/components/navigation/MBanner.vue",
+		"/C/Users/1021124/workspace/vuespace/bookorder-vuetify-phase2/src/components/navigation/MSideBar.vue",
+		"/C/Users/1021124/workspace/vuespace/bookorder-vuetify-phase2/src/components/MShell.vue",
+		"/C/Users/1021124/workspace/vuespace/bookorder/src/main.js",
+		"/C/Users/1021124/workspace/vuespace/mdm-project/client/app.js",
+		"/C/Users/1021124/workspace/vuespace/mdm-project/client/index.js",
+		"/C/Users/1021124/workspace/vuespace/mdm-project/client/components/MShell.vue",
+		"/C/Users/1021124/AppData/Local/Temp/7zOC7237544/build_info.xml",
+		"/C/abpp-git-repos/master/abpp/scripts/build/plbuild.properties",
+		"/C/abpp-git-repos/master/abpp/scripts/build/platform/build_info.xml",
+		"/C/abpp-git-repos/master/abpp/scripts/patch/changed_files.xml",
+		"/C/Users/1021124/AppData/Local/Temp/7zO8B75C356/changed_files.xml",
+		"/C/Users/1021124/AppData/Local/Temp/7zO8B7DAD46/build_info.xml",
+		"/C/abpp-git-repos/master/abpp/tutorial/platform/properties/abpp.properties",
+		"/C/abpp-git-repos/master/abpp/.git/info/exclude",
+		"/C/abpp-git-repos/master/abpp/scripts/bpe/pgl/build/joldocs/com/i2/ui/pgl/script/page/stub.js",
+		"/C/abpp-git-repos/master/abpp/scripts/build/platform/base/common/javascript/pgl-stub.js",
+		"/C/abpp-git-repos/master/abpp/services/ui/sample/app/common/javascript/pgl-stub.js",
+		"/C/abpp-git-repos/master/abpp/services/bpe/src/com/i2/ui/pgl/script/shell/shell.js",
+		"/C/abpp-git-repos/master/abpp/scripts/build/platform/common_installer/shell/pgl-stub.js",
+		"/C/abpp-git-repos/master/abpp/services/ui/sample/app/common/javascript/pgl-page.js",
+		"/C/Users/1021124/AppData/Local/Microsoft/Windows/INetCache/Content.Outlook/DJP0O01O/1_Buyers.json",
+		"/C/Users/1021124/Downloads/myNavSet.txt"
+	],
+	"find":
+	{
+		"height": 41.0
+	},
+	"find_in_files":
+	{
+		"height": 237.0,
+		"where_history":
+		[
+			"services/**/*.xml,services/**/*.hij",
+			"*.hij",
+			"*.java",
+			"services/**/*.xml,services/**/*.pgl",
+			"*.xml,*.pgl",
+			"services/**/*.xml",
+			"*.xml",
+			"*.*",
+			"*.java",
+			"*.xml",
+			"*.*",
+			"*.js",
+			"*.java",
+			"*.xml",
+			"*.*",
+			"*js",
+			"",
+			"services/**/*.pgl, services/**/*.xml",
+			"*.pgl, *.xml",
+			"*.pgl",
+			"*.*",
+			"*.pgl",
+			"*.*",
+			"*.pgl",
+			"*.*",
+			"services/**/*.*",
+			"tutorial/**/*.xml",
+			"tutorials/**/*.xml",
+			"services/**/*.*",
+			"tutorial/**/*.*",
+			"formattedXLS/**/*.*",
+			"tutorial/**/*.*",
+			"services/**/*.*",
+			"services/**/*.js",
+			"services/**/*.hij",
+			"services/**/*.xml",
+			"*.xml",
+			"services/**/**.xml",
+			"services/**/**.*",
+			"*.*",
+			"services/**/*.*",
+			"services/**/*.pgl",
+			"services/**/*.xml",
+			"services/**/*.java",
+			"services/**/*.*",
+			"services/**/*.xml",
+			"services/**/*.*",
+			"services/**/*.xml",
+			"services/**/*.ml",
+			"services/**/*.*",
+			"services/**/*.xml",
+			"services/**/*.*",
+			"services/**/*.xml",
+			"*.*",
+			"services/**/*.scss",
+			"services/**/*.scc",
+			"services/**/*.xml",
+			"*.xml",
+			"*.*",
+			"services/**/*.*",
+			"services/**/*.java",
+			"services/**/*.*",
+			"services/**/*.xml",
+			"services/**/*.*",
+			"services/**/*.xml",
+			"*.*",
+			"services/**/*.*",
+			"services/**/*.xml",
+			"*.*",
+			"services/**/*.XML",
+			"services/**/*.*",
+			"services/**/*.xml",
+			"tutorial/**/*.xml",
+			"services/**/*.xml",
+			"services/**/*.*",
+			"services/**/*.xml",
+			"services/**/*.java, studio/**/*.java",
+			"services/**/*.java",
+			"services/**/*.*",
+			"services/**/*.hij",
+			"services/**/*.*",
+			"services/**/*.xml",
+			"services/**/*.*",
+			"services/**/*.xml",
+			"*.xml",
+			"services/**/*.xml",
+			"*.js",
+			"*.hij",
+			"*.java",
+			"*.*",
+			"services/**/*.*",
+			"services/**/*.java",
+			"services/bpe/**/Log*.java",
+			"services/bpe/**/*.java",
+			"*.java",
+			"*.*",
+			"services/*.*",
+			"services/*.java",
+			"services/*.hij",
+			"scripts/*.*",
+			"services/*.*",
+			"*.*",
+			"services/**/*.*",
+			"services/**/*.hij",
+			"services/**/*/hij"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"_stripe_import_quotes",
+			"tab",
+			"react",
+			"jsx",
+			"loader",
+			"plugins",
+			"time",
+			"timezone",
+			"time",
+			"timezone",
+			"time",
+			"tim",
+			"timezone",
+			"onRefresh",
+			"sys_refres",
+			"gsi",
+			"PGL.CT.multiSort",
+			"multi",
+			"multisprt",
+			"getsortIndex",
+			"getSortIndex",
+			"getsortindex",
+			"gsi",
+			"Action_Definition.htm",
+			"action_definition",
+			"sortorder2",
+			"sortIndex",
+			"gsi=",
+			"timezone",
+			"time",
+			"getTimezone",
+			"DEFAULT_ABPP_TIMEZONE",
+			"SORT_ORDER",
+			"<RAISE_EVENT Name=\"createApprovalAlert\"",
+			"RAISE_EVENT",
+			"/help/DSOE/index.htm",
+			"Manage_Usergroup.htm",
+			"Manage_Usergroup.html",
+			"bpeui",
+			"try",
+			"print",
+			"<LOG Loglevel=",
+			"<LOG Loglevel=\"Warn\"",
+			"LOG ",
+			"<LOG ",
+			"<LOG",
+			"try",
+			"PWD_EXP_DATE",
+			"catch",
+			"Type=",
+			"type=",
+			"type=[",
+			"pwd_Exp_Date",
+			"dateformat",
+			"date",
+			"dateformat",
+			"PASSWORD_RECOVERY_ERROR",
+			"prod",
+			"Error to change password for use",
+			"error",
+			"smtp",
+			"rockgw.jda.com",
+			"jda.com",
+			"updateUserPassword",
+			"email_smtp_host",
+			"smtp",
+			"rockgw",
+			"system",
+			"password",
+			"tns",
+			"listner",
+			"multisort",
+			"multiSortAsc",
+			"multiSortNumbers",
+			"multisort",
+			"GET_DOC",
+			"ROOT",
+			"            <ROOT>\n",
+			"select",
+			"sortBy",
+			"pglFormInput",
+			"pglforminput",
+			"sortable",
+			"server",
+			"initialParams",
+			"initialParams\n",
+			"SORT_BY",
+			"sortby",
+			"plbuild.cmd create_patch_zip",
+			"build_info.xml",
+			"pwd_exp_date",
+			"notification",
+			"notificationmen",
+			"notificationMenu:function(){}",
+			"aes",
+			"key",
+			"navlink",
+			"createCostAdjustmentTimer",
+			"notificationmen",
+			"closenotification",
+			"rendervisible",
+			"renderVisible",
+			"xlsx",
+			"formattedxlsx",
+			"formattedxls",
+			"exceluploadfileformat",
+			"excel.*format",
+			"PGL.Events.addEvent(window",
+			"notificationMen",
+			"navigateToTargetPage",
+			"navigateToTargetFn",
+			"navigateToTargetPage",
+			"navigateToNewTabAndPostData",
+			"navigateToTargetPage",
+			"event",
+			"navigatetotargetpage",
+			"notificationmen",
+			"closetabs",
+			"closetab",
+			"notificationmen",
+			"configureTableV2",
+			"helpUrl",
+			"input",
+			"helpurl",
+			"helpur",
+			"helpurl",
+			"userlocale",
+			"and"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"ABPPSTUD_2016",
+			" ",
+			"apache-ant-1.9.6"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": ".tern-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 170,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13,
+								13
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/elements/Header/Header.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"SL.15.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"SL.21.region_keys":
+							[
+							],
+							"SL.65.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 41.0
+	},
+	"input":
+	{
+		"height": 79.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 220.0
+	},
+	"output.exec":
+	{
+		"height": 184.0
+	},
+	"output.find_results":
+	{
+		"height": 208.0
+	},
+	"output.git":
+	{
+		"height": 208.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Ant Buildfile/Ant Buildfile.sublime-build",
+	"project": "semantic-class-vue.subilme-project.sublime-project",
+	"replace":
+	{
+		"height": 76.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"i2pageg",
+				"services\\bpe\\src\\com\\i2\\ui\\pgl\\laf\\i2\\I2PageGroup.hij"
+			],
+			[
+				"i2tablehi",
+				"services\\bpe\\src\\com\\i2\\ui\\pgl\\laf\\i2\\I2Table.hij"
+			],
+			[
+				"pgl-pagejs",
+				"scripts\\build\\platform\\base\\common\\javascript\\pgl-page.js"
+			],
+			[
+				"buildpgl",
+				"scripts\\bpe\\pgl\\build_pgl.bat"
+			],
+			[
+				"plbu",
+				"scripts\\build\\plbuild.cmd"
+			],
+			[
+				"multisortxml",
+				"scripts\\build\\platform\\cfg\\xservice\\bpeui\\workflow\\MultiSort.xml"
+			],
+			[
+				"multisortpl",
+				"tutorial\\ABPPTestCases\\jolscript\\PGL\\cfg\\xservice\\bpeui\\workflow\\MultiSort_pgl.java"
+			],
+			[
+				"mutiso",
+				"scripts\\build\\platform\\cfg\\xservice\\bpeui\\workflow\\MultiSort.pgl"
+			],
+			[
+				"buildpglxml",
+				"scripts\\bpe\\pgl\\build_pgl.xml"
+			],
+			[
+				"plbuildxml",
+				"scripts\\build\\plbuild.xml"
+			],
+			[
+				"multisortpgl",
+				"services\\bpe\\projects\\bpe-services\\cfg\\xservice\\bpeui\\workflow\\MultiSort.pgl"
+			],
+			[
+				"multisort",
+				"scripts\\build\\platform\\cfg\\xservice\\bpeui\\workflow\\MultiSort.pgl"
+			],
+			[
+				"plbuild",
+				"scripts\\build\\plbuild.cmd"
+			],
+			[
+				"plbuidcm",
+				"scripts\\build\\plbuild.cmd"
+			],
+			[
+				"webworksimp",
+				"services\\bpe\\projects\\bpe-services\\cfg\\xservice\\webworks\\rules\\webworksImplRules.xml"
+			],
+			[
+				"csmuti",
+				"services\\bpe\\src\\com\\i2\\xservice\\userportal\\util\\CSMUtil.java"
+			],
+			[
+				"csmsec",
+				"services\\bpe\\src\\com\\i2\\xservice\\webworks\\CSMSecurityServices.java"
+			],
+			[
+				"cuaut",
+				"services\\bpe\\src\\com\\i2\\xservice\\platform\\CUAUtil.java"
+			],
+			[
+				"csmser",
+				"services\\bpe\\src\\com\\i2\\xservice\\webworks\\CSMSecurityServices.java"
+			],
+			[
+				"p",
+				"scripts\\build\\plbuild.cmd"
+			],
+			[
+				"cuautil",
+				"services\\bpe\\src\\com\\i2\\xservice\\platform\\CUAUtil.java"
+			],
+			[
+				"i2ta",
+				"services\\bpe\\src\\com\\i2\\ui\\pgl\\laf\\i2\\I2Table.hij"
+			],
+			[
+				"utilhelp",
+				"services\\bpe\\projects\\bpe-services\\cfg\\xservice\\platform\\rules\\UtilHelper.xml"
+			],
+			[
+				"utilhelper",
+				"scripts\\build\\platform\\cfg\\xservice\\platform\\rules\\UtilHelper.xml"
+			],
+			[
+				"changed_files",
+				"scripts\\patch\\changed_files.xml"
+			],
+			[
+				"plbuidl",
+				"scripts\\build\\plbuild.xml"
+			],
+			[
+				"plbui",
+				"scripts\\build\\plbuild.cmd"
+			],
+			[
+				"webworksium",
+				"services\\bpe\\projects\\bpe-services\\cfg\\xservice\\webworks\\rules\\webworksImplRules.xml"
+			],
+			[
+				"abpppropert",
+				"tutorial\\platform\\properties\\abpp.properties"
+			],
+			[
+				"abpp.proper",
+				"tutorial\\platform\\properties\\abpp.properties"
+			],
+			[
+				"changedfile",
+				"scripts\\patch\\changed_files.xml"
+			],
+			[
+				"plbuid",
+				"scripts\\build\\plbuild.cmd"
+			],
+			[
+				"stubjs",
+				"scripts\\bpe\\pgl\\build\\joldocs\\com\\i2\\ui\\pgl\\script\\page\\stub.js"
+			],
+			[
+				"pgl-stu",
+				"services\\ui\\sample\\app\\common\\javascript\\pgl-stub.js"
+			],
+			[
+				"plbuidxml",
+				"scripts\\build\\plbuild.xml"
+			],
+			[
+				"pgl-st",
+				"scripts\\build\\platform\\common_installer\\shell\\pgl-stub.js"
+			],
+			[
+				"pgl-page",
+				"services\\ui\\sample\\app\\common\\javascript\\pgl-page.js"
+			],
+			[
+				"shelljs",
+				"services\\bpe\\src\\com\\i2\\ui\\pgl\\script\\shell\\shell.js"
+			],
+			[
+				"i2shellh",
+				"services\\bpe\\src\\com\\i2\\ui\\pgl\\laf\\i2\\I2Shell.hij"
+			],
+			[
+				"pgl-shellj",
+				"scripts\\build\\platform\\base\\common\\javascript\\pgl-shell.js"
+			],
+			[
+				"pgl.js",
+				"services\\bpe\\src\\com\\i2\\ui\\pgl\\script\\page\\pgl.js"
+			],
+			[
+				"lafcomponent",
+				"services\\bpe\\src\\com\\i2\\ui\\pgl\\laf\\LAFComponent.java"
+			],
+			[
+				"i2buttonjava",
+				"scripts\\bpe\\pgl\\build\\hij2\\com\\i2\\ui\\pgl\\laf\\i2\\I2Button.java"
+			],
+			[
+				"i2laf.java",
+				"services\\bpe\\src\\com\\i2\\ui\\pgl\\laf\\i2\\I2LAF.java"
+			],
+			[
+				"i2shel",
+				"services\\bpe\\src\\com\\i2\\ui\\pgl\\laf\\i2\\I2Shell.hij"
+			],
+			[
+				"i2she",
+				"services\\bpe\\src\\com\\i2\\ui\\pgl\\laf\\i2\\I2Shell.hij"
+			],
+			[
+				"pglshe",
+				"scripts\\build\\platform\\base\\common\\javascript\\pgl-shell.js"
+			],
+			[
+				"userlistingpgl",
+				"services\\bpe\\projects\\bpe-services\\cfg\\xservice\\platform\\workflows\\Users.userListing.pgl"
+			],
+			[
+				"commonuserprofile",
+				"services\\bpe\\projects\\bpe-services\\cfg\\xservice\\platform\\workflows\\CommonUserProfile.CommonUserProfile.pgl"
+			],
+			[
+				"commonuserxml",
+				"services\\bpe\\projects\\bpe-services\\cfg\\xservice\\platform\\workflows\\CommonUser.xml"
+			],
+			[
+				"uiutil",
+				"scripts\\build\\platform\\cfg\\xservice\\platform\\rules\\UIUtil.xml"
+			],
+			[
+				"commonuserprofilexml",
+				"services\\bpe\\projects\\bpe-services\\cfg\\xservice\\platform\\workflows\\CommonUserProfile.xml"
+			],
+			[
+				"commonuserprof",
+				"services\\bpe\\projects\\bpe-services\\cfg\\xservice\\platform\\workflows\\CommonUserProfile.CommonUserProfile.pgl"
+			],
+			[
+				"commonuserprofi",
+				"scripts\\build\\platform\\cfg\\xservice\\platform\\workflows\\CommonUserProfile.CommonUserProfile.pgl"
+			],
+			[
+				"commonuserpror",
+				"scripts\\build\\platform\\cfg\\xservice\\platform\\workflows\\CommonUserProfile.CommonUserProfile.pgd"
+			],
+			[
+				"plbuildxm",
+				"scripts\\build\\plbuild.xml"
+			],
+			[
+				"userdetails",
+				"scripts\\build\\platform\\cfg\\xservice\\platform\\components\\UserDetailsComponent.pglx"
+			],
+			[
+				"usersecurityu",
+				"scripts\\build\\platform\\cfg\\xservice\\USER_SECURITY\\rules\\userSecurityUtil.xml"
+			],
+			[
+				"httput",
+				"services\\bpe\\src\\com\\i2\\x2\\servlet\\HttpUtil.java"
+			],
+			[
+				"plbuild.xml",
+				"scripts\\build\\plbuild.xml"
+			],
+			[
+				"i2shell",
+				"services\\bpe\\src\\com\\i2\\ui\\pgl\\laf\\i2\\I2Shell.hij"
+			],
+			[
+				"pgl-shell",
+				"services\\ui\\sample\\app\\common\\javascript\\pgl-shell.js"
+			],
+			[
+				"x2props",
+				"scripts\\build\\platform\\base\\WEB-INF\\classes\\x2.properties"
+			],
+			[
+				"commomuserprofil",
+				"services\\bpe\\projects\\bpe-services\\cfg\\xservice\\platform\\workflows\\CommonUserProfile.CommonUserProfile.pgl"
+			],
+			[
+				"commonuser",
+				"services\\bpe\\projects\\bpe-services\\cfg\\xservice\\platform\\workflows\\CommonUser.xml"
+			],
+			[
+				"pgl-shel",
+				"scripts\\build\\platform\\base\\common\\javascript\\pgl-shell.js"
+			],
+			[
+				"platformnat",
+				"services\\bpe\\src\\com\\i2\\xservice\\platform\\PlatformNative.java"
+			],
+			[
+				"laf.java",
+				"services\\bpe\\src\\com\\i2\\ui\\pgl\\laf\\LAF.java"
+			],
+			[
+				"i2laf",
+				"services\\bpe\\src\\com\\i2\\ui\\pgl\\laf\\i2\\I2LAF.java"
+			],
+			[
+				"pgl-sh",
+				"services\\ui\\sample\\app\\common\\javascript\\pgl-shell.js"
+			],
+			[
+				"abpptestcas",
+				"tutorial\\ABPPTestCases\\bin\\ABPPTestCases.owb"
+			],
+			[
+				"appsettingsdefault",
+				"scripts\\build\\platform\\studio\\resources\\config\\appSettingsDefault.xml"
+			],
+			[
+				"buildxml",
+				"QA\\Automation\\UI_Automation\\Selenium_Framework\\build.xml"
+			],
+			[
+				"selectuploadf",
+				"scripts\\build\\platform\\cfg\\xservice\\dataupload\\workflows\\SelectUploadFile.pgl"
+			],
+			[
+				"builxml",
+				"QA\\Automation\\UI_Automation\\Selenium_Framework\\build.xml"
+			],
+			[
+				"build_pgl",
+				"scripts\\bpe\\pgl\\build_pgl.xml"
+			],
+			[
+				"i2uitaglib.js",
+				"services\\ui\\sample\\app\\i2\\javascript\\i2uitaglib.js"
+			],
+			[
+				"htmlprei",
+				"services\\studio\\resources\\cpp\\htmlPreviewPane.h"
+			],
+			[
+				"plbuildproper",
+				"scripts\\build\\plbuild.properties"
+			],
+			[
+				"i2navigation",
+				"services\\bpe\\src\\com\\i2\\ui\\pgl\\laf\\i2\\I2Navigation.hij"
+			],
+			[
+				"us_account",
+				"tutorial\\ABPPTestCases\\cfg\\xservice\\abpptestcases\\testcase\\US_AccountLock.xml"
+			],
+			[
+				"i2navig",
+				"services\\bpe\\src\\com\\i2\\ui\\pgl\\laf\\i2\\I2Navigation.hij"
+			],
+			[
+				"package",
+				"services\\ui\\unit-tests\\package.json"
+			],
+			[
+				"xserverxml",
+				"tutorial\\platform\\cfg\\properties\\xserver.xml"
+			],
+			[
+				"x2proper",
+				"scripts\\build\\platform\\base\\WEB-INF\\classes\\x2.properties"
+			],
+			[
+				"csvservlet",
+				"services\\bpe\\src\\com\\i2\\ui\\pgl\\servlet\\CSVServlet.java"
+			],
+			[
+				"datauploadxml",
+				"scripts\\build\\platform\\cfg\\properties\\dataupload.xml"
+			],
+			[
+				"pgl-she",
+				"scripts\\build\\platform\\base\\common\\javascript\\pgl-shell.js"
+			],
+			[
+				"pglserv",
+				"services\\bpe\\src\\com\\i2\\ui\\pgl\\servlet\\PGLServlet.java"
+			],
+			[
+				"helpser",
+				"services\\bpe\\src\\com\\i2\\ui\\pgl\\servlet\\HelpServlet.java"
+			],
+			[
+				"us_accountlo",
+				"tutorial\\ABPPTestCases\\cfg\\xservice\\abpptestcases\\testcase\\US_AccountLock.xml"
+			],
+			[
+				"pglserver",
+				"QA\\Dev\\rl\\PGLServletReloadable.java"
+			],
+			[
+				"webtemplate",
+				"services\\ui\\sample\\app\\WEB-INF\\web.template"
+			],
+			[
+				"getnavigation",
+				"services\\bpe\\src\\com\\i2\\xcore\\xcommand\\GetNavigationCommand.java"
+			],
+			[
+				"xserver.xml",
+				"tutorial\\ABPPTestCases\\cfg\\properties\\xserver.xml"
+			],
+			[
+				"inputparam",
+				"tutorial\\ABPPTestCases\\bin\\input-parameters.xml"
+			],
+			[
+				"abpptest",
+				"tutorial\\ABPPTestCases\\bin\\ABPPTestCases.owb"
+			],
+			[
+				"abpptestca",
+				"tutorial\\ABPPTestCases\\bin\\ABPPTestCases.owb"
+			],
+			[
+				"plbuild.cm",
+				"scripts\\build\\plbuild.cmd"
+			],
+			[
+				"i18nmessage",
+				"scripts\\build\\platform\\base\\WEB-INF\\classes\\i18n-messages.properties"
+			],
+			[
+				"csmsecur",
+				"services\\bpe\\src\\com\\i2\\xservice\\webworks\\CSMSecurityServices.java"
+			],
+			[
+				"usersecy",
+				"services\\bpe\\projects\\bpe-services\\cfg\\properties\\userSecurity.xml"
+			],
+			[
+				"pglserve",
+				"services\\bpe\\src\\com\\i2\\ui\\pgl\\servlet\\PGLServlet.java"
+			],
+			[
+				"schemagen",
+				"services\\bpe\\src\\com\\i2\\xcore\\schema\\SchemaGen.java"
+			],
+			[
+				"webworksm",
+				"scripts\\build\\platform\\cfg\\xservice\\webworks\\rules\\webworksUserMgmtAPis.xml"
+			],
+			[
+				"csmutil",
+				"services\\bpe\\src\\com\\i2\\xservice\\userportal\\util\\CSMUtil.java"
+			],
+			[
+				"messagingxml",
+				"services\\bpe\\projects\\bpe-services\\cfg\\xservice\\USER_SECURITY\\rules\\userSecurityMessaging.xml"
+			],
+			[
+				"msgtemplat",
+				"services\\bpe\\projects\\bpe-services\\cfg\\xservice\\USER_SECURITY\\messaging\\userSecurityMsgTemplates.xml"
+			],
+			[
+				"helpserv",
+				"services\\bpe\\src\\com\\i2\\ui\\pgl\\servlet\\HelpServlet.java"
+			],
+			[
+				"helpservlet",
+				"services\\bpe\\src\\com\\i2\\ui\\pgl\\servlet\\HelpServlet.java"
+			],
+			[
+				"local",
+				"services\\bpe\\src\\com\\i2\\x2\\util\\i18n\\Localizer.java"
+			],
+			[
+				"omxdate",
+				"services\\bpe\\src\\com\\i2\\xcore\\util\\OmxDate.java"
+			],
+			[
+				"corei1",
+				"services\\ui\\sample\\app\\WEB-INF\\core\\i18n-text\\core_i18n_text.xml"
+			],
+			[
+				"corei18n",
+				"scripts\\build\\platform\\base\\WEB-INF\\core\\i18n-text\\core_i18n_text.xml"
+			],
+			[
+				"confighander",
+				"services\\bpe\\projects\\bpe-services\\cfg\\xservice\\platform\\rules\\ConfigHandler.xml"
+			],
+			[
+				"localizer.java",
+				"services\\bpe\\src\\com\\i2\\x2\\util\\i18n\\Localizer.java"
+			],
+			[
+				"date.java",
+				"services\\bpe\\src\\com\\i2\\xcore\\expression\\functions\\Date.java"
+			],
+			[
+				"functionreg",
+				"services\\bpe\\src\\com\\i2\\xcore\\expression\\FunctionRegistry.java"
+			],
+			[
+				"pglser",
+				"services\\bpe\\src\\com\\i2\\ui\\pgl\\servlet\\PGLServlet.java"
+			],
+			[
+				"plbuil",
+				"scripts\\build\\plbuild.xml"
+			],
+			[
+				"confighandler",
+				"services\\bpe\\projects\\bpe-services\\cfg\\xservice\\platform\\rules\\ConfigHandler.xml"
+			],
+			[
+				"confighand",
+				"scripts\\build\\platform\\cfg\\xservice\\platform\\rules\\ConfigHandler.xml"
+			],
+			[
+				"gethour",
+				"services\\bpe\\src\\com\\i2\\xcore\\expression\\functions\\GetHour.java"
+			],
+			[
+				"usersecurity",
+				"scripts\\build\\platform\\cfg\\xservice\\USER_SECURITY\\rules\\userSecurityMfgABPPUser.xml"
+			],
+			[
+				"getminute",
+				"services\\bpe\\src\\com\\i2\\xcore\\expression\\functions\\GetMinute.java"
+			],
+			[
+				"cmssecurtyser",
+				"services\\bpe\\src\\com\\i2\\xservice\\webworks\\CSMSecurityServices.java"
+			],
+			[
+				"registry",
+				"services\\bpe\\src\\com\\i2\\xcore\\expression\\FunctionRegistry.java"
+			],
+			[
+				"geth",
+				"services\\bpe\\src\\com\\i2\\xcore\\expression\\functions\\GetHour.java"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 750.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\abpp-git-repos\\master\\webworks\\webworks.sublime-project"
+			],
+			[
+				"we",
+				"C:\\abpp-git-repos\\master\\webworks\\webworks.sublime-project"
+			]
+		],
+		"width": 570.0
+	},
+	"select_symbol":
+	{
+		"height": 517.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 1473.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 425.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
