@@ -1,6 +1,20 @@
-# semantic-class-vue
+# Semantic UI Component for Vue2
 
-> A Vue.js project
+> Work In Progress
+
+This is just another attempt to create native Vue Components for
+Semantic UI. It is different from Semantic-UI-Vue in a sense that
+it's design is inspired from Vuetify and Bootstrap-Vue.
+
+For documentation it still requires a lot of work.
+More UT's and Components coming soon.
+
+## Currently it has following modules
+* Button
+* Container
+* Divider
+* Header
+* Image
 
 ## Build Setup
 
