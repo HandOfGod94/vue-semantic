@@ -14,7 +14,7 @@ import Component from 'vue-class-component'
   }
 })
 class SeButtonGroup extends Vue {
-  render () {
+  render (h) {
     return (
       <div class={this.classes}>
         {this.$slots.default}

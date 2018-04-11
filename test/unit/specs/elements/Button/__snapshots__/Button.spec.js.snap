@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SeButton Color should have correct classes for primary color 1`] = `
+<button
+  class="ui primary button"
+/>
+`;

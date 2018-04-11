@@ -13,7 +13,7 @@ import Component from 'vue-class-component'
   }
 })
 class SeDivider extends Vue {
-  render () {
+  render (h) {
     return (
       <div class={this.classes}></div>
     )

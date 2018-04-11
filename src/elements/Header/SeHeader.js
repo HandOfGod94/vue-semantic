@@ -19,8 +19,8 @@ import Component from 'vue-class-component'
   }
 })
 class SeHeader extends Vue {
-  render () {
-    let HeaderTag = `${this.as}`
+  render (h) {
+    let HeaderTag = this.as
     return (
       <HeaderTag class={this.classes}>
         {this.icon && <i class={`${this.icon} icon`}></i> }

@@ -19,7 +19,7 @@ import Component from 'vue-class-component'
   }
 })
 class SeButton extends Vue {
-  render () {
+  render (h) {
     return (
       <button class={this.classes}>
         { this.icon && <i class={`${this.icon} icon`}></i> }

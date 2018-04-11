@@ -5,7 +5,7 @@ import Component from 'vue-class-component'
   name: 'se-sub-header'
 })
 class SeSubHeader extends Vue {
-  render () {
+  render (h) {
     return (
       <div class="sub header">{this.$slots.default}</div>
     )
