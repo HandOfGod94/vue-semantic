@@ -14,7 +14,7 @@ describe('SeContainer', () => {
     const data = { propsData: { text: true }, slots: { default: contentWrapper } }
     const wrapper = mount(SeContainer, data)
     expect(wrapper.contains('.text')).toBeTruthy()
-    expect(wrapper).toMatchSnapshot()
+    expect(wrapper.html()).toMatchSnapshot()
   })
 
   it('should align properly', () => {

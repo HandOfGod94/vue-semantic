@@ -6,7 +6,7 @@ describe('SeLabel snapshot test', () => {
     const wrapper = mount(SeLabel)
     expect(wrapper.classes()).toContain('ui')
     expect(wrapper.classes()).toContain('label')
-    expect(wrapper).toMatchSnapshot()
+    expect(wrapper.html()).toMatchSnapshot()
   })
 })
 

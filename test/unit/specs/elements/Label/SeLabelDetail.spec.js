@@ -19,7 +19,7 @@ describe('SeLabelDetail snapshot test', () => {
   it('should match with existing snapshot', () => {
     const data = { slots: { default: seLabelDetailWrapper } }
     const wrapper = mount(SeLabel, data)
-    expect(wrapper).toMatchSnapshot()
+    expect(wrapper.html()).toMatchSnapshot()
   })
 })
 

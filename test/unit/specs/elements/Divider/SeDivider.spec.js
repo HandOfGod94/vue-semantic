@@ -4,7 +4,7 @@ import { mount } from '@vue/test-utils'
 describe('SeDivider snapshot test', () => {
   it('should match exisiting snapshot', () => {
     const wrapper = mount(SeDivider)
-    expect(wrapper).toMatchSnapshot()
+    expect(wrapper.html()).toMatchSnapshot()
   })
 })
 
