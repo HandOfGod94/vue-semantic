@@ -1,5 +1,7 @@
 # Semantic UI Component for Vue2
 
+[![CircleCI](https://circleci.com/gh/HandOfGod94/vue-semantic/tree/master.svg?style=shield)](https://circleci.com/gh/HandOfGod94/vue-semantic/tree/master)
+
 > Work In Progress
 
 This is just another attempt to create native Vue Components for
