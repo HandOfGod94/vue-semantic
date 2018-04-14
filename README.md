@@ -1,6 +1,7 @@
 # Semantic UI Component for Vue2
 
 [![CircleCI](https://circleci.com/gh/HandOfGod94/vue-semantic/tree/master.svg?style=shield)](https://circleci.com/gh/HandOfGod94/vue-semantic/tree/master)
+![Coverage](./test/coverage.svg)
 
 > Work In Progress
 
