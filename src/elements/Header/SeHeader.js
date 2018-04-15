@@ -11,7 +11,6 @@ import Component from 'vue-class-component'
     content: String,
     subheader: Boolean,
     block: Boolean,
-    inClass: String,
     disabled: Boolean,
     align: String,
     justified: Boolean,
@@ -44,13 +43,6 @@ class SeHeader extends Vue {
       justified: this.justified,
       header: true
     }
-
-    if (this.inClass) {
-      this.inClass.split(' ').forEach(extraClass => {
-        classes[extraClass] = extraClass
-      })
-    }
-
     return classes
   }
 }

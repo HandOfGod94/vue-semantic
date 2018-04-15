@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SeHeader basic snapshot test should match with exisiting snapshot 1`] = `<h1 class="ui header">Hello World</h1>`;
+
+exports[`SeHeader classes test should have "block" class 1`] = `<h1 class="ui block header">Hello World</h1>`;
+
+exports[`SeHeader classes test should have "disabled" class 1`] = `<h1 class="ui disabled header">Hello World</h1>`;
+
+exports[`SeHeader classes test should have "div" child as content 1`] = `
+<h1 class="ui header">
+    <i class="settings icon"></i>
+    <div class="content">Hello World </div>
+</h1>
+`;
+
+exports[`SeHeader classes test should have "icon" child 1`] = `
+<h1 class="ui header">
+    <i class="settings icon"></i>Hello World</h1>
+`;
+
+exports[`SeHeader classes test should have "img" as child 1`] = `
+<h1 class="ui header">
+    <img src="~/assets/logo.png" class="ui image">Hello World</h1>
+`;
+
+exports[`SeHeader classes test should have "justified" class 1`] = `<h1 class="ui justified header">Hello World</h1>`;
+
+exports[`SeHeader classes test should have aligned class 1`] = `<h1 class="ui right aligned header">Hello World</h1>`;
+
+exports[`SeHeader classes test should have color class 1`] = `<h1 class="ui orange header">Hello World</h1>`;

@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SeSubHeader inside SeHeader should be inside SeHeader(class="sub header") 1`] = `
+<h1 class="ui sub header">
+    <div class="sub header">This is subheader</div>
+</h1>
+`;

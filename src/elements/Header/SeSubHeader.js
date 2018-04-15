@@ -2,12 +2,13 @@ import Vue from 'vue'
 import Component from 'vue-class-component'
 
 @Component({
+  functional: true,
   name: 'se-sub-header'
 })
 class SeSubHeader extends Vue {
-  render (h) {
+  render (h, context) {
     return (
-      <div class="sub header">{this.$slots.default}</div>
+      <div class="sub header">{context.children}</div>
     )
   }
 }
