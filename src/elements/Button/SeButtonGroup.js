@@ -24,6 +24,7 @@ class SeButtonGroup extends Vue {
 
   get classes () {
     const classes = {
+      [this.size]: this.size,
       [this.width]: this.width,
       [this.color]: this.color,
 
@@ -32,6 +33,7 @@ class SeButtonGroup extends Vue {
       vertical: this.vertical,
       labeled: this.labeled,
       icon: this.icon,
+      basic: this.basic,
 
       buttons: true
     }

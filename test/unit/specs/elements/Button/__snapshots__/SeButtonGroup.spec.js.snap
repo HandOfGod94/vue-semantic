@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SeButtonGroup classes test should have "basic" class 1`] = `
+<div class="ui basic buttons">
+    <template></template>
+</div>
+`;
+
+exports[`SeButtonGroup classes test should have "huge" class for size 1`] = `
+<div class="huge ui buttons">
+    <template></template>
+</div>
+`;
+
+exports[`SeButtonGroup classes test should have "icon" class 1`] = `<div class="ui icon buttons"></div>`;
+
+exports[`SeButtonGroup classes test should have "labeled" class for size 1`] = `
+<div class="ui labeled buttons">
+    <template></template>
+</div>
+`;
+
+exports[`SeButtonGroup classes test should have "orange" class for color 1`] = `
+<div class="orange ui buttons">
+    <template></template>
+</div>
+`;
+
+exports[`SeButtonGroup classes test should have "vertical" class 1`] = `
+<div class="ui vertical buttons">
+    <template></template>
+</div>
+`;
+
+exports[`SeButtonGroup classes test should have number of columns in classList 1`] = `
+<div class="three ui buttons">
+    <template></template>
+</div>
+`;
+
+exports[`SeButtonGroup snapshot test should match with exisitng snapshot 1`] = `
+<div class="ui buttons">
+    <template></template>
+</div>
+`;
