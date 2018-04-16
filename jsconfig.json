@@ -1,5 +1,15 @@
 {
   "include": [
     "./src/**/*"
-  ]
+  ],
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true
+  },
+  "typeAcquisition": {
+    "enable": true,
+    "include": [
+      "vue",
+      "jest"
+    ]
+  }
 }

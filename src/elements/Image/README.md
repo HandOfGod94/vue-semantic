@@ -6,6 +6,9 @@ An image is a graphic representation of something
     - [SeImage](#seimage)
         - [Name](#name)
         - [Props](#props)
+    - [SeImageGroup](#seimagegroup)
+        - [Name](#name)
+        - [Props](#props)
 
 > Note: All * makred are required attributes
 
@@ -29,3 +32,11 @@ An image is a graphic representation of something
 | centered       | `false` | Boolean | An image can appear centered in a content block                                             |
 | spaced         | `false` | Boolean | An image can specify that it needs an additional spacing to separate it from nearby content |
 | float          |         | String  | An image can sit to the left or right of other content                                      |
+
+## SeImageGroup
+### Name
+`se-image-group`
+### Props
+| Name | Default | Type     | Description                                               |
+| ---- | ------- | -------- | --------------------------------------------------------- |
+| size |         | `String` | A group of images can be formatted to have the same size. |

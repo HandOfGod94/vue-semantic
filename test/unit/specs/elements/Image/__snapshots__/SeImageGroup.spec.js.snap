@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SeImageGroup snapshot test should match with existing snapshot 1`] = `
+<div class="ui small images">
+    <img src="static/user.png" class="ui image">
+    <img src="static/user.png" class="ui disabled image">
+    <img src="static/user.png" class="ui rounded image">
+</div>
+`;
