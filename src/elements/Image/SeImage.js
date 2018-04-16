@@ -12,7 +12,7 @@ export default {
     fluid: Boolean,
     rounded: Boolean,
     circular: Boolean,
-    verticalAlign: Boolean,
+    verticalAlign: String,
     centered: Boolean,
     spaced: Boolean,
     float: String

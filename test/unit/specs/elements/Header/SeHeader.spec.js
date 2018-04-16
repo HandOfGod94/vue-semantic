@@ -20,7 +20,7 @@ describe('SeHeader classes test', () => {
   })
 
   it('should have "img" as child', () => {
-    const data = {propsData: {as: 'h1', image: '~/assets/logo.png'}, slots: {default: headerContent}}
+    const data = {propsData: {as: 'h1', image: 'static/user.png'}, slots: {default: headerContent}}
     const wrapper = mount(SeHeader, data)
     expect(wrapper.contains('img.ui.image')).toBe(true)
     expect(wrapper.html()).toMatchSnapshot()

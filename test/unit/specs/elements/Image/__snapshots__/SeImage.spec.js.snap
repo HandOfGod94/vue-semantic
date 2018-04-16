@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SeImage classes test should have avatar class 1`] = `<img class="ui avatar image">`;
+
+exports[`SeImage classes test should have bordered class 1`] = `<img class="ui bordered image">`;
+
+exports[`SeImage classes test should have bordered class 2`] = `<img class="ui middle aligned image">`;
+
+exports[`SeImage classes test should have centered class 1`] = `<img class="ui centered aligned image">`;
+
+exports[`SeImage classes test should have disabled class 1`] = `<img class="ui disabled image">`;
+
+exports[`SeImage classes test should have img as child 1`] = `
+<a class="ui image">
+    <img src="static/user.png">
+</a>
+`;
+
+exports[`SeImage classes test should have size class 1`] = `<img class="ui small image">`;
+
+exports[`SeImage snapshot test should match with exisiting snapshot 1`] = `<img class="ui image">`;

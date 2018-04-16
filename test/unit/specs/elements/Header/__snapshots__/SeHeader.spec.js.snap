@@ -20,7 +20,7 @@ exports[`SeHeader classes test should have "icon" child 1`] = `
 
 exports[`SeHeader classes test should have "img" as child 1`] = `
 <h1 class="ui header">
-    <img src="~/assets/logo.png" class="ui image">Hello World</h1>
+    <img src="static/user.png" class="ui image">Hello World</h1>
 `;
 
 exports[`SeHeader classes test should have "justified" class 1`] = `<h1 class="ui justified header">Hello World</h1>`;
