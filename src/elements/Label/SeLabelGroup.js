@@ -1,16 +1,25 @@
-import Vue from 'vue'
-import Component from 'vue-class-component'
 
-@Component({
+export default {
   name: 'se-label-group',
   props: {
     size: String,
     color: String,
     tag: Boolean,
     circurlar: Boolean
-  }
-})
-class SeLabelGroup extends Vue {
+  },
+  computed: {
+    classes: function () {
+      let classes = {
+        ui: true,
+        [this.size]: this.size,
+        [this.color]: this.color,
+        tag: this.tag,
+        circurlar: this.circurlar,
+        labels: true
+      }
+      return classes
+    }
+  },
   render (h) {
     return (
       <div class={this.classes}>
@@ -18,18 +27,4 @@ class SeLabelGroup extends Vue {
       </div>
     )
   }
-
-  get classes () {
-    let classes = {
-      ui: true,
-      [this.size]: this.size,
-      [this.color]: this.color,
-      tag: this.tag,
-      circurlar: this.circurlar,
-      labels: true
-    }
-    return classes
-  }
 }
-
-export default SeLabelGroup

@@ -1,4 +1,4 @@
-# Semantic UI Component for Vue2
+# Semantic UI Component for VueJS
 
 ![Build](https://travis-ci.org/HandOfGod94/vue-semantic.svg?branch=master)
 [![Coverage Status](https://coveralls.io/repos/github/HandOfGod94/vue-semantic/badge.svg?branch=master)](https://coveralls.io/github/HandOfGod94/vue-semantic?branch=master)

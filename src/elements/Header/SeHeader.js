@@ -1,7 +1,5 @@
-import Vue from 'vue'
-import Component from 'vue-class-component'
 
-@Component({
+export default {
   name: 'se-header',
   props: {
     as: { type: String, required: true },
@@ -15,10 +13,24 @@ import Component from 'vue-class-component'
     align: String,
     justified: Boolean,
     color: String
-  }
-})
-class SeHeader extends Vue {
-  render (h) {
+  },
+  computed: {
+    classes: function () {
+      let classes = {
+        ui: true,
+        inverted: this.inverted,
+        [this.color]: this.color,
+        [`${this.align} aligned`]: this.align,
+        disabled: this.disabled,
+        sub: this.subheader,
+        block: this.block,
+        justified: this.justified,
+        header: true
+      }
+      return classes
+    }
+  },
+  render: function (h) {
     let HeaderTag = this.as
     return (
       <HeaderTag class={this.classes}>
@@ -30,21 +42,4 @@ class SeHeader extends Vue {
       </HeaderTag>
     )
   }
-
-  get classes () {
-    let classes = {
-      ui: true,
-      inverted: this.inverted,
-      [this.color]: this.color,
-      [`${this.align} aligned`]: this.align,
-      disabled: this.disabled,
-      sub: this.subheader,
-      block: this.block,
-      justified: this.justified,
-      header: true
-    }
-    return classes
-  }
 }
-
-export default SeHeader

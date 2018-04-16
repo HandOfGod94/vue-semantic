@@ -1,7 +1,5 @@
-import Vue from 'vue'
-import Component from 'vue-class-component'
 
-@Component({
+export default {
   name: 'se-divider',
   props: {
     horizontal: Boolean,
@@ -10,29 +8,25 @@ import Component from 'vue-class-component'
     hidden: Boolean,
     section: Boolean,
     clearing: Boolean
-  }
-})
-class SeDivider extends Vue {
-  render (h) {
+  },
+  computed: {
+    classes: function () {
+      const classes = {
+        ui: true,
+        horizontal: this.horizontal,
+        inverted: this.inverted,
+        fitted: this.fitted,
+        hidden: this.hidden,
+        section: this.section,
+        clearing: this.clearing,
+        divider: true
+      }
+      return classes
+    }
+  },
+  render: function (h) {
     return (
       <div class={this.classes}></div>
     )
   }
-
-  get classes () {
-    const classes = {
-      ui: true,
-      horizontal: this.horizontal,
-      inverted: this.inverted,
-      fitted: this.fitted,
-      hidden: this.hidden,
-      section: this.section,
-      clearing: this.clearing,
-      divider: true
-    }
-
-    return classes
-  }
 }
-
-export default SeDivider

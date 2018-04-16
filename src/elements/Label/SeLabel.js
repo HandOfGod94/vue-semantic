@@ -1,7 +1,5 @@
-import Vue from 'vue'
-import Component from 'vue-class-component'
 
-@Component({
+export default {
   name: 'se-label',
   props: {
     as: { type: String, default: 'div' },
@@ -18,10 +16,30 @@ import Component from 'vue-class-component'
     horizontal: Boolean,
     floating: Boolean,
     attach: String
-  }
-})
-class SeLabel extends Vue {
-  render (h) {
+  },
+  computed: {
+    classes: function () {
+      let classes = {
+        floating: this.floating,
+        ui: true,
+        [this.size]: this.size,
+        image: this.image,
+        tag: this.tag,
+        ribbon: this.ribbon,
+        [this.color]: this.color,
+        empty: this.empty,
+        horizontal: this.horizontal,
+        circular: this.circular,
+        basic: this.basic,
+        [`${this.corner} corner`]: this.corner,
+        [`${this.pointing} pointing`]: this.pointing,
+        [`${this.attach} attached`]: this.attach,
+        label: true
+      }
+      return classes
+    }
+  },
+  render: function (h) {
     let Label = this.as
     return (
       <Label class={this.classes}>
@@ -29,31 +47,4 @@ class SeLabel extends Vue {
       </Label>
     )
   }
-
-  get classes () {
-    let classes = {
-      floating: this.floating,
-
-      ui: true,
-
-      [this.size]: this.size,
-      image: this.image,
-      tag: this.tag,
-      ribbon: this.ribbon,
-      [this.color]: this.color,
-      empty: this.empty,
-      horizontal: this.horizontal,
-      circular: this.circular,
-      basic: this.basic,
-      [`${this.corner} corner`]: this.corner,
-      [`${this.pointing} pointing`]: this.pointing,
-      [`${this.attach} attached`]: this.attach,
-
-      label: true
-    }
-
-    return classes
-  }
 }
-
-export default SeLabel

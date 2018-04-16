@@ -1,7 +1,5 @@
-import Vue from 'vue'
-import Component from 'vue-class-component'
 
-@Component({
+export default {
   name: 'se-image',
   props: {
     as: { type: String, default: 'img' },
@@ -18,10 +16,29 @@ import Component from 'vue-class-component'
     centered: Boolean,
     spaced: Boolean,
     float: String
-  }
-})
-class SeImage extends Vue {
-  render (h) {
+  },
+  computed: {
+    classes: function () {
+      let classes = {
+        ui: true,
+        hidden: this.hidden,
+        disabled: this.disabled,
+        [this.size]: this.size,
+        bordered: this.bordered,
+        avatar: this.avatar,
+        fluid: this.fluid,
+        rounded: this.rounded,
+        circular: this.circular,
+        [`${this.verticalAlign} aligned`]: this.verticalAlign,
+        centered: this.centered,
+        spaced: this.spaced,
+        [`${this.float} floated`]: this.float,
+        image: true
+      }
+      return classes
+    }
+  },
+  render: function (h) {
     let Image = this.as
     return (
       <Image class={this.classes} src={this.as === 'img' && this.src}>
@@ -29,26 +46,4 @@ class SeImage extends Vue {
       </Image>
     )
   }
-
-  get classes () {
-    let classes = {
-      ui: true,
-      hidden: this.hidden,
-      disabled: this.disabled,
-      [this.size]: this.size,
-      bordered: this.bordered,
-      avatar: this.avatar,
-      fluid: this.fluid,
-      rounded: this.rounded,
-      circular: this.circular,
-      [`${this.verticalAlign} aligned`]: this.verticalAlign,
-      centered: this.centered,
-      spaced: this.spaced,
-      [`${this.float} floated`]: this.float,
-      image: true
-    }
-    return classes
-  }
 }
-
-export default SeImage

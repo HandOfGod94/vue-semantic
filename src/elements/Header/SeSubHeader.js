@@ -1,16 +1,10 @@
-import Vue from 'vue'
-import Component from 'vue-class-component'
 
-@Component({
+export default {
   functional: true,
-  name: 'se-sub-header'
-})
-class SeSubHeader extends Vue {
-  render (h, context) {
+  name: 'se-sub-header',
+  render: function (h, ctx) {
     return (
-      <div class="sub header">{context.children}</div>
+      <div class="sub header">{ctx.children}</div>
     )
   }
 }
-
-export default SeSubHeader

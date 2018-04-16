@@ -1,16 +1,10 @@
-import Vue from 'vue'
-import Component from 'vue-class-component'
 
-@Component({
+export default {
   functional: true,
-  name: 'se-label-detail'
-})
-class SeLabelDetail extends Vue {
-  render (h, context) {
+  name: 'se-label-detail',
+  render: function (h, ctx) {
     return (
-      <div class="ui detail">{context.children}</div>
+      <div class="ui detail">{ctx.children}</div>
     )
   }
 }
-
-export default SeLabelDetail
