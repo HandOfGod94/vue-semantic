@@ -1,4 +1,4 @@
-import { SeImage } from '@/elements/Image'
+import SeImage from '@/elements/Image/SeImage'
 import { mount } from '@vue/test-utils'
 
 const imageContent = '<img src="static/user.png">'

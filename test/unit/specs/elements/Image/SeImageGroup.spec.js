@@ -1,4 +1,5 @@
-import { SeImage, SeImageGroup } from '@/elements/Image'
+import SeImage from '@/elements/Image/SeImage'
+import SeImageGroup from '@/elements/Image/SeImageGroup'
 import { mount } from '@vue/test-utils'
 
 const images = `

@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import { SeImage, SeImageGroup } from './elements/Image'
+import {SeImage, SeImageGroup} from './elements'
 
 export default {
   name: 'App',

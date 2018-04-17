@@ -1,4 +1,3 @@
-import Vue from 'vue'
 
 export default {
   name: 'se-image-group',
