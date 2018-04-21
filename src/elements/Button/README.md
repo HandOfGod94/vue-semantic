@@ -6,6 +6,7 @@ A button indicates a possible user action
     - [SeButton](#sebutton)
         - [Name](#name)
         - [Props](#props)
+        - [Slots](#slots)
     - [SeButtonGroup](#sebuttongroup)
         - [Name](#name)
         - [Props](#props)
@@ -30,6 +31,11 @@ A button indicates a possible user action
 | compact  | `false` | Boolean | A button can reduce its padding to fit into tighter spaces     |
 | fluid    | `false` | Boolean | A button can take the width of its container                   |
 | circular | `false` | Boolean | A button can be circular                                       |
+
+### Slots
+| Name  | Description                           |
+| ----- | ------------------------------------- |
+| label | Slot for rendering label indie button |
 
 
 ## SeButtonGroup

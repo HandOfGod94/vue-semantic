@@ -3,22 +3,55 @@
 exports[`SeButton classes test should have "icon" class 1`] = `
 <button class="ui icon button">
     <i class="play icon"></i>
+
 </button>
 `;
 
-exports[`SeButton classes test should have correct classes for basic variation 1`] = `<button class="ui basic button"></button>`;
+exports[`SeButton classes test should have correct classes for basic variation 1`] = `
+<button class="ui basic button">
+    <!---->
 
-exports[`SeButton classes test should have correct classes for circular variation 1`] = `<button class="circular ui button"></button>`;
+</button>
+`;
 
-exports[`SeButton classes test should have correct classes for custom color 1`] = `<button class="ui orange button"></button>`;
+exports[`SeButton classes test should have correct classes for circular variation 1`] = `
+<button class="circular ui button">
+    <!---->
 
-exports[`SeButton classes test should have correct classes for float 1`] = `<button class="ui right floated button"></button>`;
+</button>
+`;
 
-exports[`SeButton classes test should have correct classes for primary color 1`] = `<button class="ui primary button"></button>`;
+exports[`SeButton classes test should have correct classes for custom color 1`] = `
+<button class="ui orange button">
+    <!---->
+
+</button>
+`;
+
+exports[`SeButton classes test should have correct classes for float 1`] = `
+<button class="ui right floated button">
+    <!---->
+
+</button>
+`;
+
+exports[`SeButton classes test should have correct classes for primary color 1`] = `
+<button class="ui primary button">
+    <!---->
+
+</button>
+`;
 
 exports[`SeButton snapshot test should match with button having icon and label snapshot 1`] = `
 <button class="ui labeled icon button">
-    <i class="mail icon"></i>Send Mail</button>
+    <i class="mail icon"></i>
+    Send Mail
+</button>
 `;
 
-exports[`SeButton snapshot test should match with exisitng snapshot 1`] = `<button class="ui button"></button>`;
+exports[`SeButton snapshot test should match with exisitng snapshot 1`] = `
+<button class="ui button">
+    <!---->
+
+</button>
+`;

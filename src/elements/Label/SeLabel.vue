@@ -1,4 +1,13 @@
+<template>
+  <component :is="as" :class="classObject">
+    <slot></slot>
+    <div v-if="hasDetail" class="detail">
+      <slot name="detail">{{detail}}</slot>
+    </div>
+  </component>
+</template>
 
+<script>
 export default {
   name: 'se-label',
   props: {
@@ -15,11 +24,12 @@ export default {
     pointing: String,
     horizontal: Boolean,
     floating: Boolean,
-    attach: String
+    attach: String,
+    detail: String
   },
   computed: {
-    classes: function () {
-      let classes = {
+    classObject () {
+      return {
         floating: this.floating,
         ui: true,
         [this.size]: this.size,
@@ -36,15 +46,12 @@ export default {
         [`${this.attach} attached`]: this.attach,
         label: true
       }
-      return classes
-    }
-  },
-  render: function (h) {
-    let Label = this.as
-    return (
-      <Label class={this.classes}>
-        {this.$slots.default}
-      </Label>
-    )
+    },
+    hasDetail () { return !!this.$slots['detail'] || this.detail }
   }
 }
+</script>
+
+<style>
+
+</style>

@@ -1,4 +1,8 @@
+<template>
+  <div :class="classObject"></div>
+</template>
 
+<script>
 export default {
   name: 'se-divider',
   props: {
@@ -10,8 +14,8 @@ export default {
     clearing: Boolean
   },
   computed: {
-    classes: function () {
-      const classes = {
+    classObject () {
+      return {
         ui: true,
         horizontal: this.horizontal,
         inverted: this.inverted,
@@ -21,12 +25,11 @@ export default {
         clearing: this.clearing,
         divider: true
       }
-      return classes
     }
-  },
-  render: function (h) {
-    return (
-      <div class={this.classes}></div>
-    )
   }
 }
+</script>
+
+<style>
+
+</style>

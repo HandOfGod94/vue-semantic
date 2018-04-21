@@ -1,4 +1,4 @@
-import SeHeader from '@/elements/Header/SeHeader'
+import SeHeader from '@/elements/Header/SeHeader.vue'
 import { mount } from '@vue/test-utils'
 
 const headerContent = 'Hello World'
@@ -19,25 +19,10 @@ describe('SeHeader classes test', () => {
     expect(wrapper.html()).toMatchSnapshot()
   })
 
-  it('should have "img" as child', () => {
-    const data = {propsData: {as: 'h1', image: 'static/user.png'}, slots: {default: headerContent}}
-    const wrapper = mount(SeHeader, data)
-    expect(wrapper.contains('img.ui.image')).toBe(true)
-    expect(wrapper.html()).toMatchSnapshot()
-  })
-
   it('should have "icon" child', () => {
     const data = {propsData: {as: 'h1', icon: 'settings'}, slots: {default: headerContent}}
     const wrapper = mount(SeHeader, data)
     expect(wrapper.contains('i')).toBe(true)
-    expect(wrapper.html()).toMatchSnapshot()
-  })
-
-  it('should have "div" child as content', () => {
-    const data = {propsData: {as: 'h1', icon: 'settings', content: 'Hello World'}}
-    const wrapper = mount(SeHeader, data)
-    expect(wrapper.contains('i.settings.icon')).toBe(true)
-    expect(wrapper.contains('div.content')).toBe(true)
     expect(wrapper.html()).toMatchSnapshot()
   })
 
@@ -52,6 +37,25 @@ describe('SeHeader classes test', () => {
     const data = {propsData: {as: 'h1', align: 'right'}, slots: {default: headerContent}}
     const wrapper = mount(SeHeader, data)
     expect(wrapper.contains('.right.aligned')).toBe(true)
+    expect(wrapper.html()).toMatchSnapshot()
+  })
+
+  it('should have appropriate structure for content and subheader', () => {
+    const data = {
+      propsData: { as: 'h1', content: 'Hello World', subheader: 'Hello World Subheader' }
+    }
+    const wrapper = mount(SeHeader, data)
+    expect(wrapper.contains('.ui.header>div.content>div.sub.header')).toBe(true)
+    expect(wrapper.html()).toMatchSnapshot()
+  })
+
+  it('should have appropriate structure when slots are used', () => {
+    const data = {
+      propsData: { as: 'h1' },
+      slots: { content: 'Hello World', subheader: 'Hello World Subheader' }
+    }
+    const wrapper = mount(SeHeader, data)
+    expect(wrapper.contains('.ui.header>div.content>div.sub.header')).toBe(true)
     expect(wrapper.html()).toMatchSnapshot()
   })
 

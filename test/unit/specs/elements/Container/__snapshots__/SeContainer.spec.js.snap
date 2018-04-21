@@ -1,5 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`SeContainer should align properly 1`] = `
+<div class="ui left aligned container">
+    <div> Hello World </div>
+</div>
+`;
+
+exports[`SeContainer should contiain class for fluid 1`] = `
+<div class="ui fluid container">
+    <div> Hello World </div>
+</div>
+`;
+
+exports[`SeContainer should contiain class for justified 1`] = `
+<div class="ui justified container">
+    <div> Hello World </div>
+</div>
+`;
+
 exports[`SeContainer should have margins as per text attr 1`] = `
 <div class="ui text container">
     <div> Hello World </div>

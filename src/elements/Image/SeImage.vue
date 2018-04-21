@@ -1,3 +1,10 @@
+<template>
+  <component :is="as" :class="classObject" :src="src">
+    <slot></slot>
+  </component>
+</template>
+
+<script>
 
 export default {
   name: 'se-image',
@@ -14,12 +21,12 @@ export default {
     circular: Boolean,
     verticalAlign: String,
     centered: Boolean,
-    spaced: Boolean,
+    spaced: String,
     float: String
   },
   computed: {
-    classes: function () {
-      let classes = {
+    classObject () {
+      return {
         ui: true,
         hidden: this.hidden,
         disabled: this.disabled,
@@ -31,19 +38,16 @@ export default {
         circular: this.circular,
         [`${this.verticalAlign} aligned`]: this.verticalAlign,
         centered: this.centered,
-        spaced: this.spaced,
+        [`${this.spaced} spaced`]: this.spaced,
         [`${this.float} floated`]: this.float,
         image: true
       }
-      return classes
     }
-  },
-  render: function (h) {
-    let Image = this.as
-    return (
-      <Image class={this.classes} src={this.as === 'img' && this.src}>
-        { this.as !== 'img' && this.$slots.default}
-      </Image>
-    )
   }
 }
+
+</script>
+
+<style>
+
+</style>

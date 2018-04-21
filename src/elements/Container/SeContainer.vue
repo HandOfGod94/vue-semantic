@@ -1,4 +1,10 @@
+<template>
+  <div :class="classObject">
+    <slot></slot>
+  </div>
+</template>
 
+<script>
 export default {
   name: 'se-container',
   props: {
@@ -8,8 +14,8 @@ export default {
     fluid: Boolean
   },
   computed: {
-    classes: function () {
-      const classes = {
+    classObject () {
+      return {
         ui: true,
         text: this.text,
         [`${this.align} aligned`]: this.align,
@@ -17,14 +23,7 @@ export default {
         fluid: this.fluid,
         container: true
       }
-      return classes
     }
-  },
-  render: function (h) {
-    return (
-      <div class={this.classes}>
-        {this.$slots.default}
-      </div>
-    )
   }
 }
+</script>

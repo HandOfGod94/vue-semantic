@@ -1,4 +1,10 @@
+<template>
+  <div :class="classObject">
+    <slot></slot>
+  </div>
+</template>
 
+<script>
 export default {
   name: 'se-label-group',
   props: {
@@ -8,8 +14,8 @@ export default {
     circurlar: Boolean
   },
   computed: {
-    classes: function () {
-      let classes = {
+    classObject () {
+      return {
         ui: true,
         [this.size]: this.size,
         [this.color]: this.color,
@@ -17,14 +23,12 @@ export default {
         circurlar: this.circurlar,
         labels: true
       }
-      return classes
     }
-  },
-  render (h) {
-    return (
-      <div class={this.classes}>
-        {this.$slots.default}
-      </div>
-    )
   }
 }
+
+</script>
+
+<style>
+
+</style>

@@ -2,6 +2,8 @@
 
 exports[`SeLabelGroup Snapshot test should match with exisiting snapshot 1`] = `
 <div class="ui labels">
-    <div class="ui label">Hello Label</div>
+    <div class="ui label">Hello Label
+        <!---->
+    </div>
 </div>
 `;

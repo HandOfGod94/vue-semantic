@@ -1,4 +1,10 @@
+<template>
+  <div :class="classObject">
+    <slot></slot>
+  </div>
+</template>
 
+<script>
 export default {
   name: 'se-button-group',
   props: {
@@ -7,30 +13,29 @@ export default {
     vertical: Boolean,
     labeled: Boolean,
     color: String,
+    attach: String,
     basic: Boolean,
     size: String
   },
   computed: {
-    classes: function () {
-      const classes = {
+    classObject () {
+      return {
         [this.size]: this.size,
         [this.width]: this.width,
         [this.color]: this.color,
         ui: true,
+        [`${this.attach} attached`]: this.attach,
         vertical: this.vertical,
         labeled: this.labeled,
         icon: this.icon,
         basic: this.basic,
         buttons: true
       }
-      return classes
     }
-  },
-  render: function (h) {
-    return (
-      <div class={this.classes}>
-        {this.$slots.default}
-      </div>
-    )
   }
 }
+</script>
+
+<style>
+
+</style>

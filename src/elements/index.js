@@ -9,6 +9,7 @@ import SeImageGroup from './Image/SeImageGroup'
 import SeLabel from './Label/SeLabel'
 import SeLabelDetail from './Label/SeLabelDetail'
 import SeLabelGroup from './Label/SeLabelGroup'
+import SeInput from './Input/SeInput'
 
 export {
   SeButton,
@@ -21,5 +22,6 @@ export {
   SeImageGroup,
   SeLabel,
   SeLabelDetail,
-  SeLabelGroup
+  SeLabelGroup,
+  SeInput
 }

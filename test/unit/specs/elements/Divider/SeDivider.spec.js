@@ -1,4 +1,4 @@
-import SeDivider from '@/elements/Divider/SeDivider'
+import SeDivider from '@/elements/Divider/SeDivider.vue'
 import { mount } from '@vue/test-utils'
 
 describe('SeDivider snapshot test', () => {

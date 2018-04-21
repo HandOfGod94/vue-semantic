@@ -1,4 +1,4 @@
-import SeLabel from '@/elements/Label/SeLabel'
+import SeLabel from '@/elements/Label/SeLabel.vue'
 import { mount } from '@vue/test-utils'
 
 describe('SeLabel snapshot test', () => {

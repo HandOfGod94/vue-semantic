@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`SeLabelDetail snapshot test should match with existing snapshot 1`] = `
-<div class="ui label">
-    <div class="ui detail"> Hello World </div>
-</div>
-`;

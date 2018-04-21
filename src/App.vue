@@ -1,21 +1,34 @@
 <template>
   <div id="app">
-    <se-image-group size="small">
-      <se-image src="static/user.png" />
-      <se-image src="static/user.png" disabled />
-      <se-image src="static/user.png" rounded />
-    </se-image-group>
+    <se-label>
+      <i class="mail icon"></i> 23
+    </se-label>
+    <se-label>
+      Dogs
+      <template slot="detail">214</template>
+    </se-label>
+    <se-label as="a">
+      Tag
+      <i class="close icon"></i>
+    </se-label>
+    <se-label detail="214">Dogs</se-label>
+    <se-label as="a">
+      <se-image src="static/user.png" avatar spaced />
+      Elliot
+    </se-label>
+    <se-label pointing="top" color="red" basic>Pointing</se-label>
   </div>
 </template>
 
 <script>
-import {SeImage, SeImageGroup} from './elements'
+import SeLabel from './elements/Label/SeLabel.vue'
+import SeImage from './elements/Image/SeImage.vue'
 
 export default {
   name: 'App',
   components: {
-    SeImage,
-    SeImageGroup
+    SeLabel,
+    SeImage
   }
 }
 
