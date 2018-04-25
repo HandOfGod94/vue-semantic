@@ -3,22 +3,6 @@ import SeButton from '@/elements/Button/SeButton.vue'
 import { mount } from '@vue/test-utils'
 import Vue from 'vue'
 
-// type: { type: String, required: true },
-// action: Boolean,
-// actionPosition: String,
-// disabled: Boolean,
-// fluid: Boolean,
-// placeholderText: String,
-// focus: Boolean,
-// loading: Boolean,
-// icon: String,
-// iconPosition: String,
-// label: String,
-// labelPosition: String,
-// error: Boolean,
-// value: String,
-// name: String
-
 const actionSlot = `
   <template>
     <se-button color="teal" icon="cart" label="Checkout" />

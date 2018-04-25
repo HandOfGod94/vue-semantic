@@ -29,7 +29,6 @@ export default {
     loading: Boolean,
     icon: String,
     iconPosition: String,
-    label: String,
     labelPosition: String,
     error: Boolean,
     value: String,
