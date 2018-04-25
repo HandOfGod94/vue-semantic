@@ -36,7 +36,7 @@ describe('SeLabel classes test', () => {
   })
 
   it('should have "corner" class', () => {
-    const data = { propsData: { corner: 'left' } }
+    const data = { propsData: { position: 'left corner' } }
     const wrapper = mount(SeLabel, data)
     expect(wrapper.classes()).toContain('left')
     expect(wrapper.classes()).toContain('corner')

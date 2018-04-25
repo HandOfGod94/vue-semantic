@@ -2,7 +2,12 @@
   <div :class="classObject">
     <slot name="left-action"></slot>
     <slot name="left-label"></slot>
-    <input :type="type" :placeholder="placeholderText" :value="value" v-on="inputListener" />
+    <input
+      :type="type"
+      :placeholder="placeholderText"
+      :value="value"
+      :name="name"
+      v-on="inputListener" />
     <i v-if="icon" :class="`${classObject.icon} icon`"></i>
     <slot name="right-label"></slot>
     <slot name="right-action"></slot>
@@ -10,7 +15,6 @@
 </template>
 
 <script>
-import SeLabel from '../Label/SeLabel.vue'
 
 export default {
   name: 'se-input',
@@ -19,19 +23,23 @@ export default {
     action: Boolean,
     actionPosition: String,
     disabled: Boolean,
+    fluid: Boolean,
     placeholderText: String,
     focus: Boolean,
     loading: Boolean,
     icon: String,
     iconPosition: String,
+    label: String,
     labelPosition: String,
     error: Boolean,
-    value: String
+    value: String,
+    name: String
   },
   computed: {
     classObject () {
       return {
         ui: true,
+        fluid: this.fluid,
         disabled: this.disabled,
         [`${this.actionPosition} action`]: this.action,
         [`${this.labelPosition} labeled`]: this.labelPosition,
@@ -52,9 +60,6 @@ export default {
       }
       return Object.assign({}, this.$listeners, inputEvent)
     }
-  },
-  components: {
-    SeLabel
   }
 }
 </script>

@@ -18,13 +18,13 @@ export default {
     empty: Boolean,
     circular: Boolean,
     size: String,
-    corner: String,
+    position: String,
     tag: Boolean,
     ribbon: Boolean,
-    pointing: String,
+    pointing: Boolean,
     horizontal: Boolean,
     floating: Boolean,
-    attach: String,
+    attach: Boolean,
     detail: String
   },
   computed: {
@@ -41,9 +41,9 @@ export default {
         horizontal: this.horizontal,
         circular: this.circular,
         basic: this.basic,
-        [`${this.corner} corner`]: this.corner,
-        [`${this.pointing} pointing`]: this.pointing,
-        [`${this.attach} attached`]: this.attach,
+        [this.position]: this.position,
+        pointing: this.pointing,
+        attached: this.attach,
         label: true
       }
     },
