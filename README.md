@@ -12,13 +12,6 @@ it's design is inspired from Vuetify and Bootstrap-Vue.
 For documentation it still requires a lot of work.
 More UT's and Components coming soon.
 
-## Currently it has following modules
-* Button
-* Container
-* Divider
-* Header
-* Image
-
 ## Build Setup
 
 ``` bash
@@ -39,6 +32,9 @@ npm run unit
 
 # run all tests
 npm test
+
+# See docs
+yarn docs:dev # or npm docs:dev
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

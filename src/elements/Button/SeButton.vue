@@ -17,7 +17,7 @@ export default {
     attach: String,
     color: String,
     label: String,
-    labelPosition: String,
+    labelPosition: { type: String, default: '' },
     icon: String,
     basic: Boolean,
     inverted: Boolean,
@@ -43,8 +43,7 @@ export default {
         inverted: this.inverted,
         [this.color]: this.color,
         loading: this.loading,
-        [this.labelPosition]: this.labelPosition,
-        labeled: this.label,
+        [`${this.labelPosition} labeled`]: this.labelPosition || this.label,
         icon: this.icon,
         basic: this.basic,
         button: true

@@ -8,26 +8,39 @@ A button indicates a possible user action
 ### Name
 `se-button`
 ### Props
-| Name           | Default | Type    | Description                                                    |
-| -------------- | ------- | ------- | -------------------------------------------------------------- |
-| color          |         | String  | Semantic UI colors: (primary, secondary, red, orange)          |
-| label          |         | String  | Label content for button                                       |
-| label-position |         | String  | Position for label (`left` or `right`)                         |
-| icon           |         | String  | A button can have only an icon                                 |
-| basic          | `false` | Boolean | A basic button is less pronounced                              |
-| inverted       | `false` | Boolean | A button can be formatted to appear on dark backgrounds        |
-| disabled       | `false` | Boolean | A button can show it is currently unable to be interacted with |
-| loading        | `false` | Boolean | A button can show a loading indicator                          |
-| size           |         | String  | A button can have different sizes(mini,tiny,huge,massive)      |
-| float          |         | String  | A button can be aligned to the left or right of its container  |
-| compact        | `false` | Boolean | A button can reduce its padding to fit into tighter spaces     |
-| fluid          | `false` | Boolean | A button can take the width of its container                   |
-| circular       | `false` | Boolean | A button can be circular                                       |
+| Name                  | Default | Type    | Description                                                    |
+| --------------------- | ------- | ------- | -------------------------------------------------------------- |
+| [color](#color)       |         | String  | Semantic UI colors: (primary, secondary, red, orange)          |
+| label                 |         | String  | Label content for button                                       |
+| label-position        |         | String  | Position for label (`left` or `right`)                         |
+| [icon](#icon)         |         | String  | A button can have only an icon                                 |
+| [basic](#basic)       | `false` | Boolean | A basic button is less pronounced                              |
+| inverted              | `false` | Boolean | A button can be formatted to appear on dark backgrounds        |
+| [disabled](#disabled) | `false` | Boolean | A button can show it is currently unable to be interacted with |
+| [loading](#loading)   | `false` | Boolean | A button can show a loading indicator                          |
+| [size](#size)         |         | String  | A button can have different sizes(mini,tiny,huge,massive)      |
+| [float](#float)       |         | String  | A button can be aligned to the left or right of its container  |
+| [compact](#compact)   | `false` | Boolean | A button can reduce its padding to fit into tighter spaces     |
+| [fluid](#fluid)       | `false` | Boolean | A button can take the width of its container                   |
+| [circular](#circular) | `false` | Boolean | A button can be circular                                       |
 
 ### Slots
-| Name  | Description                           |
-| ----- | ------------------------------------- |
-| label | Slot for rendering label indie button |
+
+* **label**
+  
+  Slot for rendering label in buttons
+  
+  Example
+  ```html
+  <se-button as="div" label-position="left">
+    <se-label slot="label">2048</se-label>
+    <se-button as="div" icon="heart">Like</se-button>
+  </se-button>
+  ```
+  <se-button as="div" label-position="left">
+    <se-label slot="label" basic>2048</se-label>
+    <se-button as="div" icon="heart">Like</se-button>
+  </se-button>
 
 ### Exmaple
 
@@ -41,12 +54,6 @@ A button indicates a possible user action
 <se-button color="secondary">Secondary</se-button>
 <se-button color="orange">Orange</se-button>
 
-#### basic
-```html
-<se-button basic>Basic</se-button>
-```
-<se-button basic>Basic</se-button>
-
 #### icon
 ```html
 <se-button icon="cloud" />
@@ -56,6 +63,12 @@ A button indicates a possible user action
 <se-button icon="cloud" />
 <se-button label="Pause" icon="pause" />
 <se-button label="Next" label-position="right" icon="right arrow" />
+
+#### basic
+```html
+<se-button basic>Basic</se-button>
+```
+<se-button basic>Basic</se-button>
 
 #### disabled
 ```html
@@ -129,15 +142,140 @@ A button indicates a possible user action
 ### Name
 `se-button-group`
 ### Props
-| Name     | Default | Type    | Description                                                             |
-| -------- | ------- | ------- | ----------------------------------------------------------------------- |
-| icon     |         | Boolean | Button groups can show groups of icons                                  |
-| width    |         | String  | Groups can have their widths divided evenly (e.g. `five` for 5 buttons) |
-| vertical | `false` | Boolean | Groups can be formatted to appear vertically                            |
-| labeled  | `false` | Boolean | Groups can be formatted as labeled icons                                |
-| color    |         | String  | Semantic UI colors: (primary, secondary, red, orange)                   |
-| basic    | `false` | Boolean | A button group can be less pronounced                                   |
-| size     |         | String  | A button group can have different sizes(mini,tiny,huge,massive)         |
+| Name                        | Default | Type    | Description                                                             |
+| --------------------------- | ------- | ------- | ----------------------------------------------------------------------- |
+| [icon](#icon-group)         |         | Boolean | Button groups can show groups of icons                                  |
+| [width](#width-group)       |         | String  | Groups can have their widths divided evenly (e.g. `five` for 5 buttons) |
+| [vertical](#vertical-group) | `false` | Boolean | Groups can be formatted to appear vertically                            |
+| [labeled](#labeled-group)   |         | String  | Groups can be formatted as labeled icons                                |
+| [color](#color-group)       |         | String  | Semantic UI colors: (primary, secondary, red, orange)                   |
+| [basic](#basic-group)       | `false` | Boolean | A button group can be less pronounced                                   |
+| [size](#size-group)         |         | String  | A button group can have different sizes(mini,tiny,huge,massive)         |
+
+### Example
+#### icon (group)
+```html
+<se-button-group icon>
+  <se-button icon="align left" />
+  <se-button icon="align center" />
+  <se-button icon="align right" />
+  <se-button icon="align justify" />
+</se-button-group>
+<se-button-group icon>
+  <se-button icon="bold"/>
+  <se-button icon="underline" />
+  <se-button icon="text width" />
+</se-button-group>
+```
+<se-button-group icon>
+  <se-button icon="align left" />
+  <se-button icon="align center" />
+  <se-button icon="align right" />
+  <se-button icon="align justify" />
+</se-button-group>
+<se-button-group icon>
+  <se-button icon="bold"/>
+  <se-button icon="underline" />
+  <se-button icon="text width" />
+</se-button-group>
+
+#### width (group)
+```html
+<se-button-group width="five">
+  <se-button>Overview</se-button>
+  <se-button>Specs</se-button>
+  <se-button>Warranty</se-button>
+  <se-button>Reviews</se-button>
+  <se-button>Support</se-button>
+</se-button-group>
+<se-button-group width="three">
+  <se-button>Overview</se-button>
+  <se-button>Specs</se-button>
+  <se-button>Support</se-button>
+</se-button-group>
+```
+<se-button-group width="five">
+  <se-button>Overview</se-button>
+  <se-button>Specs</se-button>
+  <se-button>Warranty</se-button>
+  <se-button>Reviews</se-button>
+  <se-button>Support</se-button>
+</se-button-group>
+<se-button-group width="three">
+  <se-button>Overview</se-button>
+  <se-button>Specs</se-button>
+  <se-button>Support</se-button>
+</se-button-group>
+
+#### vertical (group)
+```html
+<se-button-group vertical>
+  <se-button>Feed</se-button> 
+  <se-button>Message</se-button> 
+  <se-button>Events</se-button> 
+</se-button-group>
+```
+<se-button-group vertical>
+  <se-button>Feed</se-button> 
+  <se-button>Message</se-button> 
+  <se-button>Events</se-button> 
+</se-button-group>
+
+#### labeled (group)
+```html
+<se-button-group vertical labeled>
+  <se-button icon="play" label="Play" />
+  <se-button icon="pause" label="Pause" />
+  <se-button icon="shuffle" label="Shuffle" />
+</se-button-group>
+```
+<se-button-group vertical labeled>
+  <se-button icon="play" label="Play" />
+  <se-button icon="pause" label="Pause" />
+  <se-button icon="shuffle" label="Shuffle" />
+</se-button-group>
+
+#### color (group)
+```html
+<se-button-group color="primary">
+  <se-button>Overview</se-button>
+  <se-button>Specs</se-button>
+  <se-button>Support</se-button>
+</se-button-group>
+```
+<se-button-group color="primary">
+  <se-button>Overview</se-button>
+  <se-button>Specs</se-button>
+  <se-button>Support</se-button>
+</se-button-group>
+
+#### basic (group)
+```html
+<se-button-group basic>
+  <se-button>Overview</se-button>
+  <se-button>Specs</se-button>
+  <se-button>Support</se-button>
+</se-button-group>
+```
+<se-button-group basic>
+  <se-button>Overview</se-button>
+  <se-button>Specs</se-button>
+  <se-button>Support</se-button>
+</se-button-group>
+
+#### size (group)
+```html
+<se-button-group size="big">
+  <se-button>Overview</se-button>
+  <se-button>Specs</se-button>
+  <se-button>Support</se-button>
+</se-button-group>
+```
+<se-button-group size="big">
+  <se-button>Overview</se-button>
+  <se-button>Specs</se-button>
+  <se-button>Support</se-button>
+</se-button-group>
 
 <style lang="styl">
 @import '~semantic-ui-css/semantic.css';

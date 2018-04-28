@@ -5,6 +5,7 @@ module.exports = {
       ['/', 'Home'],
       {
         title:'Elements',
+        collapsable: false,
         children: [
           '/elements/Button/',
           '/elements/Container/'
