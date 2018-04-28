@@ -17,6 +17,7 @@ export default {
     attach: String,
     color: String,
     label: String,
+    labelPosition: String,
     icon: String,
     basic: Boolean,
     inverted: Boolean,
@@ -31,6 +32,7 @@ export default {
   computed: {
     classObject () {
       return {
+        fluid: this.fluid,
         [this.size]: this.size,
         compact: this.compact,
         circular: this.circular,
@@ -41,6 +43,7 @@ export default {
         inverted: this.inverted,
         [this.color]: this.color,
         loading: this.loading,
+        [this.labelPosition]: this.labelPosition,
         labeled: this.label,
         icon: this.icon,
         basic: this.basic,
