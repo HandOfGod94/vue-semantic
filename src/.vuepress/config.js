@@ -1,6 +1,7 @@
 module.exports = {
   title:'Vue Semantic',
   themeConfig: {
+    sidebarDepth: 2,
     sidebar: [
       ['/', 'Home'],
       {
@@ -8,7 +9,8 @@ module.exports = {
         collapsable: false,
         children: [
           '/elements/Button/',
-          '/elements/Container/'
+          '/elements/Container/',
+          '/elements/Divider/'
         ]
       }
     ]

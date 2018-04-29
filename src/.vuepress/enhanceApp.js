@@ -2,6 +2,8 @@ import SeContainer from '../elements/Container/SeContainer.vue'
 import SeButton from '../elements/Button/SeButton.vue'
 import SeButtonGroup from '../elements/Button/SeButtonGroup.vue'
 import SeLabel from '../elements/Label/SeLabel.vue'
+import SeDivider from '../elements/Divider/SeDivider.vue'
+import SeHeader from '../elements/Header/SeHeader.vue'
 
 export default ({
   Vue, // the version of Vue being used in the VuePress app
@@ -13,4 +15,6 @@ export default ({
   Vue.component('se-button', SeButton)
   Vue.component('se-button-group', SeButtonGroup)
   Vue.component('se-label', SeLabel)
+  Vue.component('se-divider', SeDivider)
+  Vue.component('se-header', SeHeader)
 }

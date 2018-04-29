@@ -1,5 +1,7 @@
 <template>
-  <div :class="classObject"></div>
+  <div :class="classObject">
+    <slot></slot>
+  </div>
 </template>
 
 <script>
@@ -14,6 +16,7 @@ export default {
     clearing: Boolean
   },
   computed: {
+    // TODO: Add floating header
     classObject () {
       return {
         ui: true,
