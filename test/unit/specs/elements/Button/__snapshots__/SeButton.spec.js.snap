@@ -43,7 +43,7 @@ exports[`SeButton classes test should have correct classes for primary color 1`]
 `;
 
 exports[`SeButton snapshot test should match with button having icon and label snapshot 1`] = `
-<button class="ui labeled icon button">
+<button class="ui  labeled icon button">
     <i class="mail icon"></i>
     Send Mail
 </button>

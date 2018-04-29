@@ -38,15 +38,15 @@ exports[`SeButtonGroup classes test should have "icon" class 1`] = `<div class="
 
 exports[`SeButtonGroup classes test should have "labeled" class for size 1`] = `
 <div class="ui labeled buttons">
-    <button class="ui labeled button">
+    <button class="ui  labeled button">
         <!---->
         hello
     </button>
-    <button class="ui labeled button">
+    <button class="ui  labeled button">
         <!---->
         world
     </button>
-    <button class="ui labeled button">
+    <button class="ui  labeled button">
         <!---->
         something
     </button>
