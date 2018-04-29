@@ -22,7 +22,7 @@ exports[`SeHeader classes test should have "disabled" class 1`] = `
 `;
 
 exports[`SeHeader classes test should have "icon" child 1`] = `
-<h1 class="ui icon header">
+<h1 class="ui header">
     <i class="settings icon"></i> Hello World
     <!---->
 </h1>
