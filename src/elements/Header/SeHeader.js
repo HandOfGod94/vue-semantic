@@ -1,4 +1,4 @@
-import SeHeaderFunctional from './SeHeader.functional'
+import SeHeaderComponent from './SeHeader.functional'
 
 export default {
   name: 'se-header',
@@ -37,7 +37,7 @@ export default {
   },
 
   render (create) {
-    return create(SeHeaderFunctional, {
+    return create(SeHeaderComponent, {
       attrs: {
         ...this.$props,
         slots: this.$slots

@@ -1,3 +1,5 @@
+import SeButtonComponent from './SeButton.functional'
+
 export default {
   name: 'se-button',
   props: {
@@ -40,14 +42,13 @@ export default {
     }
   },
 
-  render (h) {
-    let Component = this.as
-    return (
-      <Component class={this.classObject}>
-        {this.icon && <i class={`${this.icon} icon`}></i> }
-        {this.$slots.label || this.label}
-        {this.$slots.default}
-      </Component>
-    )
+  render (createElement) {
+    return createElement(SeButtonComponent, {
+      attrs: {
+        ...this.$props,
+        slots: this.$slots
+      },
+      class: this.classObject
+    })
   }
 }

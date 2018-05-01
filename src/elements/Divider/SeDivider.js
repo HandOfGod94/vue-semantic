@@ -1,4 +1,4 @@
-import SeDividerFunctional from './SeDivider.functional'
+import SeDividerComponent from './SeDivider.functional'
 
 export default {
   name: 'se-divider',
@@ -27,7 +27,7 @@ export default {
   },
 
   render (createElement) {
-    return createElement(SeDividerFunctional, {
+    return createElement(SeDividerComponent, {
       attrs: {
         slots: {...this.$slots}
       },

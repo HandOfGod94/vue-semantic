@@ -1,3 +1,5 @@
+import SeButtonGroupComponent from './SeButtonGroup.functional'
+
 export default {
   name: 'se-button-group',
   props: {
@@ -26,11 +28,12 @@ export default {
       }
     }
   },
-  render (h) {
-    return (
-      <div class={this.classObject}>
-        {this.$slots.default}
-      </div>
-    )
+  render (createElement) {
+    return createElement(SeButtonGroupComponent, {
+      attrs: {
+        slots: this.$slots
+      },
+      class: this.classObject
+    })
   }
 }
