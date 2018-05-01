@@ -1,4 +1,4 @@
-import SeContainer from '@/elements/Container/SeContainer.vue'
+import SeContainer from '@/elements/Container/SeContainer'
 import { mount } from '@vue/test-utils'
 
 const contentWrapper = `
