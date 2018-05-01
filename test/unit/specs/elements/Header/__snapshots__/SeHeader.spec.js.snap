@@ -1,71 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SeHeader basic snapshot test should match with exisiting snapshot 1`] = `
-<h1 class="ui header">
-    <!---->Hello World
-    <!---->
-</h1>
-`;
+exports[`SeHeader basic snapshot test should match with exisiting snapshot 1`] = `<h1 class="ui header">Hello World</h1>`;
 
-exports[`SeHeader classes test should have "block" class 1`] = `
-<h1 class="ui block header">
-    <!---->Hello World
-    <!---->
-</h1>
-`;
+exports[`SeHeader classes test should have "block" class 1`] = `<h1 class="ui block header">Hello World</h1>`;
 
-exports[`SeHeader classes test should have "disabled" class 1`] = `
-<h1 class="ui disabled header">
-    <!---->Hello World
-    <!---->
-</h1>
-`;
+exports[`SeHeader classes test should have "disabled" class 1`] = `<h1 class="ui disabled header">Hello World</h1>`;
 
 exports[`SeHeader classes test should have "icon" child 1`] = `
 <h1 class="ui icon header">
-    <i class="settings icon"></i> Hello World
-    <!---->
-</h1>
+    <i class="settings icon"></i>Hello World</h1>
 `;
 
-exports[`SeHeader classes test should have "justified" class 1`] = `
-<h1 class="ui justified header">
-    <!---->Hello World
-    <!---->
-</h1>
-`;
+exports[`SeHeader classes test should have "justified" class 1`] = `<h1 class="ui justified header">Hello World</h1>`;
 
-exports[`SeHeader classes test should have aligned class 1`] = `
-<h1 class="ui right aligned header">
-    <!---->Hello World
-    <!---->
-</h1>
-`;
+exports[`SeHeader classes test should have aligned class 1`] = `<h1 class="ui right aligned header">Hello World</h1>`;
 
 exports[`SeHeader classes test should have appropriate structure for content and subheader 1`] = `
 <h1 class="ui header">
-    <!---->
-    <div class="content">
-        Hello World
-        <div class="sub header">
-            Hello World Subheader
-        </div>
-    </div>
-</h1>
-`;
-
-exports[`SeHeader classes test should have appropriate structure when slots are used 1`] = `
-<h1 class="ui header">
-    <!---->
     <div class="content">Hello World
         <div class="sub header">Hello World Subheader</div>
     </div>
 </h1>
 `;
 
-exports[`SeHeader classes test should have color class 1`] = `
-<h1 class="ui orange header">
-    <!---->Hello World
-    <!---->
+exports[`SeHeader classes test should have appropriate structure when slots are used 1`] = `
+<h1 class="ui header">
+    <div class="content">Hello World
+        <div class="sub header">Hello World Subheader</div>
+    </div>
 </h1>
 `;
+
+exports[`SeHeader classes test should have color class 1`] = `<h1 class="ui orange header">Hello World</h1>`;

@@ -1,37 +1,42 @@
 <template>
   <div id="app">
-    <se-button icon="cloud" />
-    <se-button label="Pause" icon="pause" />
-    <se-button label="Next" label-position="right" icon="right arrow" />
-    <se-button as="div" label-position="left">
-      <se-label slot="label" basic>2048</se-label>
-      <se-button as="div" icon="heart">Like</se-button>
-    </se-button>
-    <se-button-group icon>
-      <se-button icon="align left" />
-      <se-button icon="align center" />
-      <se-button icon="align right" />
-      <se-button icon="align justify" />
-    </se-button-group>
-    <se-button-group icon>
-      <se-button icon="bold"/>
-      <se-button icon="underline" />
-      <se-button icon="text width" />
-    </se-button-group>
+    <se-header as="h2">First Header</se-header>
+    <se-header
+      as="h2"
+      icon-header
+      icon="settings"
+      content="Account settings"
+      subheader="Manage your account settings and e-mail prefs"
+    />
+    <se-header as="h2" icon-header icon="settings">
+      <template slot="content">Account Settings</template>
+      <template slot="subheader">Manage your account settings and email prefs</template>
+    </se-header>
+    <se-header as="h2" icon="circular users" icon-header align="center">Friends</se-header>
+    <se-header as="h2" sub> Price </se-header>
+    <span>$10.99</span>
+    <se-header as="h2">
+      <se-image src="static/user.png" />
+      <template slot="content">Plugins</template>
+      <template slot="subheader">Check out our plugins</template>
+    </se-header>
+    <se-header as="h2" content="Plugins" subheader="Checkout our plugins">
+      <se-image src="static/user.png" />
+    </se-header>
+    <se-header as="h2" block>Block header</se-header>
+    <se-header float="right" as="h2" block>Block header</se-header>
   </div>
 </template>
 
 <script>
-import SeLabel from './elements/Label/SeLabel.vue'
-import SeButton from './elements/Button/SeButton'
-import SeButtonGroup from './elements/Button/SeButtonGroup'
+import SeHeader from './elements/Header/SeHeader'
+import SeImage from './elements/Image/SeImage.vue'
 
 export default {
   name: 'App',
   components: {
-    SeLabel,
-    SeButton,
-    SeButtonGroup
+    SeHeader,
+    SeImage
   }
 }
 

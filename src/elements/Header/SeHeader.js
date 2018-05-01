@@ -1,21 +1,4 @@
-<template>
-  <component :is="as" :class="classObject">
-    <i v-if="icon" :class="`${icon} icon`"></i>
-    <slot></slot>
-    <div v-if="hasContent" class="content">
-      <slot name="content">
-        {{content}}
-      </slot>
-      <div v-if="hasSubheader" class="sub header" >
-        <slot name="subheader">
-          {{subheader}}
-        </slot>
-      </div>
-   </div>
-  </component>
-</template>
 
-<script>
 export default {
   name: 'se-header',
   props: {
@@ -24,6 +7,8 @@ export default {
     sub: Boolean,
     block: Boolean,
     icon: String,
+    iconHeader: Boolean,
+    float: String,
     disabled: Boolean,
     align: String,
     justified: Boolean,
@@ -31,15 +16,17 @@ export default {
     content: String,
     subheader: String
   },
+
   computed: {
     classObject () {
       return {
         ui: true,
         inverted: this.inverted,
         [this.color]: this.color,
+        [`${this.float} floated`]: this.float,
         [`${this.align} aligned`]: this.align,
         disabled: this.disabled,
-        icon: this.icon,
+        icon: this.iconHeader,
         sub: this.sub,
         block: this.block,
         justified: this.justified,
@@ -48,10 +35,30 @@ export default {
     },
     hasContent () { return !!this.$slots['content'] || this.content },
     hasSubheader () { return !!this.$slots['subheader'] || this.subheader }
+  },
+
+  render (h) {
+    const Component = this.as
+
+    const subHeaderSlot = (
+      <div class="sub header">
+        {this.$slots.subheader || this.subheader}
+      </div>
+    )
+
+    const contentSlot = (
+      <div class="content">
+        {this.$slots.content || this.content}
+        {this.hasSubheader && subHeaderSlot}
+      </div>
+    )
+
+    return (
+      <Component class={this.classObject}>
+        {this.icon && <i class={`${this.icon} icon`}></i>}
+        {this.$slots.default}
+        {this.hasContent && contentSlot}
+      </Component>
+    )
   }
 }
-</script>
-
-<style>
-
-</style>
