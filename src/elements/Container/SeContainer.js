@@ -1,3 +1,5 @@
+import SeContainerComponent from './SeContainer.functional'
+
 export default {
   name: 'se-container',
 
@@ -21,11 +23,12 @@ export default {
     }
   },
 
-  render (h) {
-    return (
-      <div class={this.classObject}>
-        {this.$slots.default}
-      </div>
-    )
+  render (createElement) {
+    return createElement(SeContainerComponent, {
+      attrs: {
+        slots: this.$slots
+      },
+      class: this.classObject
+    })
   }
 }

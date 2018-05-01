@@ -40,7 +40,7 @@ export default {
     return create(SeHeaderFunctional, {
       attrs: {
         ...this.$props,
-        slots: {...this.$slots}
+        slots: this.$slots
       },
       class: this.classObject
     })
