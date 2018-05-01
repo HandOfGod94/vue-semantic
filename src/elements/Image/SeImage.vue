@@ -1,8 +1,6 @@
 <template>
-  <component :is="as" :class="classObject" :src="(as!=='img')?undefined:src">
-    <slot v-if="as!=='img'">
-      <img :src="src" />
-    </slot>
+  <component :is="as" :class="classObject" :src="src">
+    <slot></slot>
   </component>
 </template>
 
