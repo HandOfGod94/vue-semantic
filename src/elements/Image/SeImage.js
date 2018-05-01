@@ -1,10 +1,3 @@
-<template>
-  <component :is="as" :class="classObject" :src="src">
-    <slot></slot>
-  </component>
-</template>
-
-<script>
 
 export default {
   name: 'se-image',
@@ -24,6 +17,7 @@ export default {
     spaced: String,
     float: String
   },
+
   computed: {
     classObject () {
       return {
@@ -43,11 +37,14 @@ export default {
         image: true
       }
     }
+  },
+
+  render (h) {
+    const Component = this.as
+    return (
+      <Component class={this.classObject} src={this.src}>
+        {this.$slots.default}
+      </Component>
+    )
   }
 }
-
-</script>
-
-<style>
-
-</style>
