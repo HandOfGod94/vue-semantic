@@ -1,4 +1,4 @@
-import SeHeaderFunctional from './SeHeaderFunctional'
+import SeHeaderFunctional from './SeHeader.functional'
 
 export default {
   name: 'se-header',

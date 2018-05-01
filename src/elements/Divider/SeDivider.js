@@ -1,3 +1,4 @@
+import SeDividerFunctional from './SeDivider.functional'
 
 export default {
   name: 'se-divider',
@@ -11,7 +12,6 @@ export default {
   },
 
   computed: {
-    // TODO: Add floating header
     classObject () {
       return {
         ui: true,
@@ -26,11 +26,12 @@ export default {
     }
   },
 
-  render (h) {
-    return (
-      <div class={this.classObject}>
-        {this.$slots.default}
-      </div>
-    )
+  render (createElement) {
+    return createElement(SeDividerFunctional, {
+      attrs: {
+        slots: {...this.$slots}
+      },
+      class: this.classObject
+    })
   }
 }
