@@ -1,4 +1,4 @@
-import SeButton from '@/elements/Button/SeButton.vue'
+import SeButton from '@/elements/Button/SeButton'
 import { mount } from '@vue/test-utils'
 
 describe('SeButton snapshot test', () => {

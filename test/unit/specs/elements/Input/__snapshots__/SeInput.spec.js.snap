@@ -10,9 +10,7 @@ exports[`SeInput props testing should have focus on the filed 1`] = `
 exports[`SeInput props testing should have left action button 1`] = `
 <div class="ui left action input">
     <button class="ui teal  labeled icon button">
-        <i class="cart icon"></i>
-        Checkout
-    </button>
+        <i class="cart icon"></i>Checkout</button>
     <input type="text">
     <!---->
 </div>
@@ -23,9 +21,7 @@ exports[`SeInput props testing should have right action button 1`] = `
     <input type="text">
     <!---->
     <button class="ui teal  labeled icon button">
-        <i class="cart icon"></i>
-        Checkout
-    </button>
+        <i class="cart icon"></i>Checkout</button>
 </div>
 `;
 

@@ -1,10 +1,3 @@
-<template>
-  <div :class="classObject">
-    <slot></slot>
-  </div>
-</template>
-
-<script>
 export default {
   name: 'se-button-group',
   props: {
@@ -32,10 +25,12 @@ export default {
         buttons: true
       }
     }
+  },
+  render (h) {
+    return (
+      <div class={this.classObject}>
+        {this.$slots.default}
+      </div>
+    )
   }
 }
-</script>
-
-<style>
-
-</style>

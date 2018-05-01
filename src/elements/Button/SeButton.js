@@ -1,14 +1,3 @@
-<template>
-  <component :is="as" :class="classObject">
-    <i :class="`${this.icon} icon`" v-if="classObject.icon"></i>
-    <slot name="label">
-      {{label}}
-    </slot>
-    <slot></slot>
-  </component>
-</template>
-
-<script>
 export default {
   name: 'se-button',
   props: {
@@ -49,6 +38,16 @@ export default {
         button: true
       }
     }
+  },
+
+  render (h) {
+    let Component = this.as
+    return (
+      <Component class={this.classObject}>
+        {this.icon && <i class={`${this.icon} icon`}></i> }
+        {this.$slots.label || this.label}
+        {this.$slots.default}
+      </Component>
+    )
   }
 }
-</script>
