@@ -1,10 +1,4 @@
-<template>
-  <div :class="classObject">
-    <slot></slot>
-  </div>
-</template>
 
-<script>
 export default {
   name: 'se-divider',
   props: {
@@ -15,6 +9,7 @@ export default {
     section: Boolean,
     clearing: Boolean
   },
+
   computed: {
     // TODO: Add floating header
     classObject () {
@@ -29,10 +24,13 @@ export default {
         divider: true
       }
     }
+  },
+
+  render (h) {
+    return (
+      <div class={this.classObject}>
+        {this.$slots.default}
+      </div>
+    )
   }
 }
-</script>
-
-<style>
-
-</style>
