@@ -30,7 +30,7 @@
 
 <script>
 import SeHeader from './elements/Header/SeHeader'
-import SeImage from './elements/Image/SeImage.vue'
+import SeImage from './elements/Image/SeImage'
 
 export default {
   name: 'App',

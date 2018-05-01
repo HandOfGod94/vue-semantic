@@ -1,3 +1,4 @@
+import SeHeaderFunctional from './SeHeaderFunctional'
 
 export default {
   name: 'se-header',
@@ -32,33 +33,16 @@ export default {
         justified: this.justified,
         header: true
       }
-    },
-    hasContent () { return !!this.$slots['content'] || this.content },
-    hasSubheader () { return !!this.$slots['subheader'] || this.subheader }
+    }
   },
 
-  render (h) {
-    const Component = this.as
-
-    const subHeaderSlot = (
-      <div class="sub header">
-        {this.$slots.subheader || this.subheader}
-      </div>
-    )
-
-    const contentSlot = (
-      <div class="content">
-        {this.$slots.content || this.content}
-        {this.hasSubheader && subHeaderSlot}
-      </div>
-    )
-
-    return (
-      <Component class={this.classObject}>
-        {this.icon && <i class={`${this.icon} icon`}></i>}
-        {this.$slots.default}
-        {this.hasContent && contentSlot}
-      </Component>
-    )
+  render (create) {
+    return create(SeHeaderFunctional, {
+      attrs: {
+        ...this.$props,
+        slots: {...this.$slots}
+      },
+      class: this.classObject
+    })
   }
 }
