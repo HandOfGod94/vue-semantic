@@ -1,5 +1,5 @@
 import SeInput from '@/elements/Input/SeInput.vue'
-import SeButton from '@/elements/Button/SeButton.vue'
+import SeButton from '@/elements/Button/SeButton'
 import { mount } from '@vue/test-utils'
 import Vue from 'vue'
 

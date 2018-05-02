@@ -1,10 +1,5 @@
-<template>
-  <div :class="classObject">
-    <slot></slot>
-  </div>
-</template>
+import SeDividerComponent from './SeDivider.functional'
 
-<script>
 export default {
   name: 'se-divider',
   props: {
@@ -15,8 +10,8 @@ export default {
     section: Boolean,
     clearing: Boolean
   },
+
   computed: {
-    // TODO: Add floating header
     classObject () {
       return {
         ui: true,
@@ -29,10 +24,14 @@ export default {
         divider: true
       }
     }
+  },
+
+  render (createElement) {
+    return createElement(SeDividerComponent, {
+      attrs: {
+        slots: this.$slots
+      },
+      class: this.classObject
+    })
   }
 }
-</script>
-
-<style>
-
-</style>

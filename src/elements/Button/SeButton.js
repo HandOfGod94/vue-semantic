@@ -1,14 +1,5 @@
-<template>
-  <component :is="as" :class="classObject">
-    <i :class="`${this.icon} icon`" v-if="classObject.icon"></i>
-    <slot name="label">
-      {{label}}
-    </slot>
-    <slot></slot>
-  </component>
-</template>
+import SeButtonComponent from './SeButton.functional'
 
-<script>
 export default {
   name: 'se-button',
   props: {
@@ -49,6 +40,15 @@ export default {
         button: true
       }
     }
+  },
+
+  render (createElement) {
+    return createElement(SeButtonComponent, {
+      attrs: {
+        ...this.$props,
+        slots: this.$slots
+      },
+      class: this.classObject
+    })
   }
 }
-</script>

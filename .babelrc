@@ -6,18 +6,13 @@
         "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
       }
     }],
-    "stage-2",
-    "flow"
+    "stage-2"
   ],
-  "plugins": [ "babel-plugin-transform-class-properties",
-    "babel-plugin-syntax-flow",
-    "babel-plugin-transform-flow-strip-types","transform-vue-jsx", "transform-runtime"],
+  "plugins": ["transform-vue-jsx", "transform-runtime"],
   "env": {
     "test": {
-      "presets": ["env", "stage-2", "flow"],
-      "plugins": [ "babel-plugin-transform-class-properties",
-    "babel-plugin-syntax-flow",
-    "babel-plugin-transform-flow-strip-types","transform-vue-jsx", "transform-es2015-modules-commonjs", "dynamic-import-node"]
+      "presets": ["env", "stage-2"],
+      "plugins": ["transform-vue-jsx", "transform-es2015-modules-commonjs", "dynamic-import-node"]
     }
   }
 }

@@ -1,6 +1,6 @@
 import SeContainer from '../elements/Container/SeContainer.vue'
-import SeButton from '../elements/Button/SeButton.vue'
-import SeButtonGroup from '../elements/Button/SeButtonGroup.vue'
+import SeButton from '../elements/Button/SeButton'
+import SeButtonGroup from '../elements/Button/SeButtonGroup'
 import SeLabel from '../elements/Label/SeLabel.vue'
 import SeDivider from '../elements/Divider/SeDivider.vue'
 import SeHeader from '../elements/Header/SeHeader.vue'
@@ -12,8 +12,8 @@ export default ({
   siteData // site metadata
 }) => {
   Vue.component('se-container', SeContainer)
-  Vue.component('se-button', SeButton)
   Vue.component('se-button-group', SeButtonGroup)
+  Vue.component('se-button',SeButton)
   Vue.component('se-label', SeLabel)
   Vue.component('se-divider', SeDivider)
   Vue.component('se-header', SeHeader)

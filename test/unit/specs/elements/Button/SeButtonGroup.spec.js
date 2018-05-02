@@ -1,5 +1,5 @@
-import SeButtonGroup from '@/elements/Button/SeButtonGroup.vue'
-import SeButton from '@/elements/Button/SeButton.vue'
+import SeButtonGroup from '@/elements/Button/SeButtonGroup'
+import SeButton from '@/elements/Button/SeButton'
 import { mount } from '@vue/test-utils'
 
 const labeledButtonTemplate = `

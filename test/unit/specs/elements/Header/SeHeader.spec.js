@@ -1,4 +1,4 @@
-import SeHeader from '@/elements/Header/SeHeader.vue'
+import SeHeader from '@/elements/Header/SeHeader'
 import { mount } from '@vue/test-utils'
 
 const headerContent = 'Hello World'
@@ -20,7 +20,10 @@ describe('SeHeader classes test', () => {
   })
 
   it('should have "icon" child', () => {
-    const data = {propsData: {as: 'h1', icon: 'settings'}, slots: {default: headerContent}}
+    const data = {
+      propsData: {as: 'h1', iconHeader: true, icon: 'settings'},
+      slots: {default: headerContent}
+    }
     const wrapper = mount(SeHeader, data)
     expect(wrapper.contains('i')).toBe(true)
     expect(wrapper.html()).toMatchSnapshot()

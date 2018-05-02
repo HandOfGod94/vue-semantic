@@ -1,12 +1,4 @@
-<template>
-  <component :is="as" :class="classObject" :src="(as!=='img')?undefined:src">
-    <slot v-if="as!=='img'">
-      <img :src="src" />
-    </slot>
-  </component>
-</template>
-
-<script>
+import SeImageComponent from './SeImage.functional'
 
 export default {
   name: 'se-image',
@@ -26,6 +18,7 @@ export default {
     spaced: String,
     float: String
   },
+
   computed: {
     classObject () {
       return {
@@ -45,11 +38,15 @@ export default {
         image: true
       }
     }
+  },
+
+  render (createElement) {
+    return createElement(SeImageComponent, {
+      attrs: {
+        ...this.$props,
+        slots: this.$slots
+      },
+      class: this.classObject
+    })
   }
 }
-
-</script>
-
-<style>
-
-</style>

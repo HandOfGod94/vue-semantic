@@ -1,10 +1,5 @@
-<template>
-  <div :class="classObject">
-    <slot></slot>
-  </div>
-</template>
+import SeButtonGroupComponent from './SeButtonGroup.functional'
 
-<script>
 export default {
   name: 'se-button-group',
   props: {
@@ -32,10 +27,13 @@ export default {
         buttons: true
       }
     }
+  },
+  render (createElement) {
+    return createElement(SeButtonGroupComponent, {
+      attrs: {
+        slots: this.$slots
+      },
+      class: this.classObject
+    })
   }
 }
-</script>
-
-<style>
-
-</style>
