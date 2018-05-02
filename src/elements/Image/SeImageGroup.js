@@ -1,3 +1,5 @@
+import SeImageGroupComponent from './SeImageGroup.functional'
+
 export default {
   name: 'se-image-group',
   props: {
@@ -14,11 +16,12 @@ export default {
     }
   },
 
-  render (h) {
-    return (
-      <div class={this.classObject}>
-        {this.$slots.default}
-      </div>
-    )
+  render (createElement) {
+    return createElement(SeImageGroupComponent, {
+      attrs: {
+        slots: this.$slots
+      },
+      class: this.classObject
+    })
   }
 }

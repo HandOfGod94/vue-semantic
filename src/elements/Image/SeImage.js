@@ -1,3 +1,4 @@
+import SeImageComponent from './SeImage.functional'
 
 export default {
   name: 'se-image',
@@ -39,12 +40,13 @@ export default {
     }
   },
 
-  render (h) {
-    const Component = this.as
-    return (
-      <Component class={this.classObject} src={this.src}>
-        {this.$slots.default}
-      </Component>
-    )
+  render (createElement) {
+    return createElement(SeImageComponent, {
+      attrs: {
+        ...this.$props,
+        slots: this.$slots
+      },
+      class: this.classObject
+    })
   }
 }

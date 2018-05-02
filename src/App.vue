@@ -1,32 +1,23 @@
 <template>
   <div id="app">
-    <se-button as="div" label-position="left">
-      <se-label slot="label" basic>2048</se-label>
-      <se-button as="div" icon="heart">Like</se-button>
-    </se-button>
-    <se-button color="primary">Primary</se-button>
-    <se-button color="secondary">Secondary</se-button>
-    <se-button color="orange">Orange</se-button>
-    <se-button-group icon>
-      <se-button icon="align left" />
-      <se-button icon="align center" />
-      <se-button icon="align right" />
-      <se-button icon="align justify" />
-    </se-button-group>
+    <se-image src="static/user.png" circular size="small" />
+    <se-image-group size="small">
+      <se-image src="static/user.png" circular size="small" />
+      <se-image src="static/user.png" circular size="small" />
+      <se-image src="static/user.png" circular size="small" />
+    </se-image-group>
   </div>
 </template>
 
 <script>
-import SeButton from './elements/Button/SeButton'
-import SeButtonGroup from './elements/Button/SeButtonGroup'
-import SeLabel from './elements/Label/SeLabel.vue'
+import SeImage from './elements/Image/SeImage'
+import SeImageGroup from './elements/Image/SeImageGroup'
 
 export default {
   name: 'App',
   components: {
-    SeButton,
-    SeButtonGroup,
-    SeLabel
+    SeImage,
+    SeImageGroup
   }
 }
 
