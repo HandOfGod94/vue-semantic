@@ -21,7 +21,7 @@ export default {
     )
 
     return (
-      <Component class={{...ctx.data.class}}>
+      <Component class={ctx.data.class}>
         {attrs.icon && <i class={`${attrs.icon} icon`}></i>}
         {attrs.slots.default}
         {content && contentSlot}

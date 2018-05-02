@@ -29,7 +29,7 @@ export default {
   render (createElement) {
     return createElement(SeDividerComponent, {
       attrs: {
-        slots: {...this.$slots}
+        slots: this.$slots
       },
       class: this.classObject
     })
