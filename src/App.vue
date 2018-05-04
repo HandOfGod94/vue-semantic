@@ -1,18 +1,27 @@
 <template>
   <div id="app">
-    <se-label detail="214">Dogs</se-label>
+    <se-input v-model="inputData" name="test" placeholder-text="test" type="text" />
+    {{inputData}}
+    <se-input name="actiontest" placeholder-text="action test" type="text" action>
+      <se-button slot="rightAction">Search</se-button>
+    </se-input>
   </div>
 </template>
 
 <script>
-import SeLabel from './elements/Label/SeLabel'
-import SeLabelGroup from './elements/Label/SeLabelGroup'
+import SeInput from './elements/Input/SeInput.js'
+import SeButton from './elements/Button/SeButton'
 
 export default {
   name: 'App',
+  data () {
+    return {
+      inputData: ''
+    }
+  },
   components: {
-    SeLabel,
-    SeLabelGroup
+    SeInput,
+    SeButton
   }
 }
 

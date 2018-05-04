@@ -1,4 +1,4 @@
-import SeInput from '@/elements/Input/SeInput.vue'
+import SeInput from '@/elements/Input/SeInput'
 import SeButton from '@/elements/Button/SeButton'
 import { mount } from '@vue/test-utils'
 import Vue from 'vue'
@@ -43,7 +43,7 @@ describe('SeInput props testing', () => {
   it('should have left action button', () => {
     const data = {
       propsData: { type: 'text', action: true, actionPosition: 'left' },
-      slots: { 'left-action': actionSlot },
+      slots: { leftAction: actionSlot },
       stubs: { 'se-button': SeButton }
     }
     const wrapper = mount(SeInput, data)
@@ -55,7 +55,7 @@ describe('SeInput props testing', () => {
   it('should have right action button', () => {
     const data = {
       propsData: { type: 'text', action: true, actionPosition: 'right' },
-      slots: { 'right-action': actionSlot },
+      slots: { rightAction: actionSlot },
       stubs: { 'se-button': SeButton }
     }
     const wrapper = mount(SeInput, data)

@@ -79,7 +79,7 @@ describe('SeLabel mixin classes test', () => {
 
   it('should have "detail" div as child', () => {
     const data = {
-      propsData: { detail: 214 }
+      propsData: { detail: '214' }
     }
     const wrapper = mount(SeLabel, data)
     expect(wrapper.contains('.ui.label>div.detail')).toBe(true)
