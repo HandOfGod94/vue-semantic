@@ -1,7 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SeLabel snapshot test should match with existing snapshot 1`] = `
+exports[`SeLabel classes test should have "corner" class 1`] = `<div class="ui left corner label"></div>`;
+
+exports[`SeLabel classes test should have "empty" class 1`] = `<div class="ui empty label"></div>`;
+
+exports[`SeLabel classes test should have "floating" class 1`] = `<div class="floating ui label"></div>`;
+
+exports[`SeLabel classes test should have "ribbon" class 1`] = `<div class="ui ribbon label"></div>`;
+
+exports[`SeLabel classes test should have "tag" class 1`] = `<div class="ui tag label"></div>`;
+
+exports[`SeLabel mixin classes test should have "basic" class 1`] = `<div class="ui basic label"></div>`;
+
+exports[`SeLabel mixin classes test should have "circular" class 1`] = `<div class="ui circular label"></div>`;
+
+exports[`SeLabel mixin classes test should have "detail" div as child 1`] = `
 <div class="ui label">
-    <!---->
+    <div class="detail">214</div>
 </div>
 `;
+
+exports[`SeLabel mixin classes test should have "mini" class for size 1`] = `<div class="ui mini label"></div>`;
+
+exports[`SeLabel mixin classes test should have "red" class for color 1`] = `<div class="ui red label"></div>`;
+
+exports[`SeLabel snapshot test should match with existing snapshot 1`] = `<div class="ui label"></div>`;

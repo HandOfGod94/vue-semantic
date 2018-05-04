@@ -1,5 +1,5 @@
-import SeLabel from '@/elements/Label/SeLabel.vue'
-import SeLabelGroup from '@/elements/Label/SeLabelGroup.vue'
+import SeLabel from '@/elements/Label/SeLabel'
+import SeLabelGroup from '@/elements/Label/SeLabelGroup'
 import { mount } from '@vue/test-utils'
 
 const labelWrapper = `
@@ -25,11 +25,13 @@ describe('SeLabelGroup classes test', () => {
     const data = { propsData: { tag: true }, slots: { default: labelWrapper } }
     const wrapper = mount(SeLabelGroup, data)
     expect(wrapper.classes()).toContain('tag')
+    expect(wrapper.html()).toMatchSnapshot()
   })
 
   it('should have correct size in classes', () => {
     const data = { propsData: { size: 'huge' }, slots: { default: labelWrapper } }
     const wrapper = mount(SeLabelGroup, data)
     expect(wrapper.classes()).toContain('huge')
+    expect(wrapper.html()).toMatchSnapshot()
   })
 })

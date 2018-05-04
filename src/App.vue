@@ -1,23 +1,18 @@
 <template>
   <div id="app">
-    <se-image src="static/user.png" circular size="small" />
-    <se-image-group size="small">
-      <se-image src="static/user.png" circular size="small" />
-      <se-image src="static/user.png" circular size="small" />
-      <se-image src="static/user.png" circular size="small" />
-    </se-image-group>
+    <se-label detail="214">Dogs</se-label>
   </div>
 </template>
 
 <script>
-import SeImage from './elements/Image/SeImage'
-import SeImageGroup from './elements/Image/SeImageGroup'
+import SeLabel from './elements/Label/SeLabel'
+import SeLabelGroup from './elements/Label/SeLabelGroup'
 
 export default {
   name: 'App',
   components: {
-    SeImage,
-    SeImageGroup
+    SeLabel,
+    SeLabelGroup
   }
 }
 
