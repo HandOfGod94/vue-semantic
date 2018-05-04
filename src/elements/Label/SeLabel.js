@@ -1,13 +1,5 @@
-<template>
-  <component :is="as" :class="classObject">
-    <slot></slot>
-    <div v-if="hasDetail" class="detail">
-      <slot name="detail">{{detail}}</slot>
-    </div>
-  </component>
-</template>
+import SeLabelComponent from './SeLabel.functional'
 
-<script>
 export default {
   name: 'se-label',
   props: {
@@ -27,6 +19,7 @@ export default {
     attach: Boolean,
     detail: String
   },
+
   computed: {
     classObject () {
       return {
@@ -46,12 +39,16 @@ export default {
         attached: this.attach,
         label: true
       }
-    },
-    hasDetail () { return !!this.$slots['detail'] || this.detail }
+    }
+  },
+
+  render (createElement) {
+    return createElement(SeLabelComponent, {
+      attrs: {
+        ...this.$props,
+        slots: this.$slots
+      },
+      class: this.classObject
+    })
   }
 }
-</script>
-
-<style>
-
-</style>

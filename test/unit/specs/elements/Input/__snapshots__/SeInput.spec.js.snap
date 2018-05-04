@@ -3,7 +3,6 @@
 exports[`SeInput props testing should have focus on the filed 1`] = `
 <div class="ui focus input">
     <input type="text">
-    <!---->
 </div>
 `;
 
@@ -12,14 +11,12 @@ exports[`SeInput props testing should have left action button 1`] = `
     <button class="ui teal  labeled icon button">
         <i class="cart icon"></i>Checkout</button>
     <input type="text">
-    <!---->
 </div>
 `;
 
 exports[`SeInput props testing should have right action button 1`] = `
 <div class="ui right action input">
     <input type="text">
-    <!---->
     <button class="ui teal  labeled icon button">
         <i class="cart icon"></i>Checkout</button>
 </div>
@@ -28,7 +25,6 @@ exports[`SeInput props testing should have right action button 1`] = `
 exports[`SeInput props testing should render basic text input field 1`] = `
 <div class="ui input">
     <input type="text">
-    <!---->
 </div>
 `;
 
@@ -36,7 +32,6 @@ exports[`SeInput props testing should update data based event value 1`] = `
 <div id="test">
     <div class="ui input">
         <input type="text" name="test">
-        <!---->
     </div>
 </div>
 `;
@@ -45,7 +40,6 @@ exports[`SeInput props testing should update data based on input's value 1`] = `
 <div id="test">
     <div class="ui input">
         <input type="text" name="test">
-        <!---->
     </div>
 </div>
 `;

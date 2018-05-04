@@ -1,23 +1,27 @@
 <template>
   <div id="app">
-    <se-image src="static/user.png" circular size="small" />
-    <se-image-group size="small">
-      <se-image src="static/user.png" circular size="small" />
-      <se-image src="static/user.png" circular size="small" />
-      <se-image src="static/user.png" circular size="small" />
-    </se-image-group>
+    <se-input v-model="inputData" name="test" placeholder-text="test" type="text" />
+    {{inputData}}
+    <se-input name="actiontest" placeholder-text="action test" type="text" action>
+      <se-button slot="rightAction">Search</se-button>
+    </se-input>
   </div>
 </template>
 
 <script>
-import SeImage from './elements/Image/SeImage'
-import SeImageGroup from './elements/Image/SeImageGroup'
+import SeInput from './elements/Input/SeInput.js'
+import SeButton from './elements/Button/SeButton'
 
 export default {
   name: 'App',
+  data () {
+    return {
+      inputData: ''
+    }
+  },
   components: {
-    SeImage,
-    SeImageGroup
+    SeInput,
+    SeButton
   }
 }
 

@@ -2,8 +2,18 @@
 
 exports[`SeLabelGroup Snapshot test should match with exisiting snapshot 1`] = `
 <div class="ui labels">
-    <div class="ui label">Hello Label
-        <!---->
-    </div>
+    <div class="ui label">Hello Label</div>
+</div>
+`;
+
+exports[`SeLabelGroup classes test should have "tag" class 1`] = `
+<div class="ui tag labels">
+    <se-label>Hello Label</se-label>
+</div>
+`;
+
+exports[`SeLabelGroup classes test should have correct size in classes 1`] = `
+<div class="ui huge labels">
+    <se-label>Hello Label</se-label>
 </div>
 `;

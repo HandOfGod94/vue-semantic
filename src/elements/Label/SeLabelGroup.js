@@ -1,10 +1,5 @@
-<template>
-  <div :class="classObject">
-    <slot></slot>
-  </div>
-</template>
+import SeLabelGroupComponent from './SeLabelGroup.functional'
 
-<script>
 export default {
   name: 'se-label-group',
   props: {
@@ -13,6 +8,7 @@ export default {
     tag: Boolean,
     circurlar: Boolean
   },
+
   computed: {
     classObject () {
       return {
@@ -24,11 +20,14 @@ export default {
         labels: true
       }
     }
+  },
+
+  render (createElement) {
+    return createElement(SeLabelGroupComponent, {
+      attrs: {
+        slots: this.$slots
+      },
+      class: this.classObject
+    })
   }
 }
-
-</script>
-
-<style>
-
-</style>
