@@ -5,11 +5,16 @@
 
 > Work In Progress
 
-This is just another attempt to create native Vue Components for
-Semantic UI. It is different from Semantic-UI-Vue in a sense that
-it's design is inspired from Vuetify and Bootstrap-Vue.
+The main aim of this project is not just limited to creating wrapper
+around Semantic UI components but to create a framework that can
+handle data intensive tasks, such as:
+* Searching
+* Sorting
+* Grouping
+* (Advance) Graph and Data plot
+* (Advnace) Querying mechanism to extract data from rendernderd componets.s
 
-For documentation it still requires a lot of work.
+Documentation still requires a lot of work.
 More UT's and Components coming soon.
 
 ## Build Setup
