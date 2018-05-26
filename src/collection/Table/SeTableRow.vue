@@ -1,4 +1,14 @@
-import SeTableCell from './SeTableCell'
+<template>
+  <tr :class="classObject">
+    <se-table-cell v-for="(i, idx) in Object.keys(rowData)" :key="idx"
+      :content="rowData[i]"
+      :editable="editable"
+    />
+  </tr>
+</template>
+
+<script>
+import SeTableCell from './SeTableCell.vue'
 
 export default {
   name: 'se-table-row',
@@ -10,7 +20,7 @@ export default {
     active: Boolean,
     disabled: Boolean,
     editable: Boolean,
-    cellData: [String, Number, Object]
+    rowData: [String, Number, Object]
   },
 
   computed: {
@@ -26,17 +36,8 @@ export default {
     }
   },
 
-  render (h) {
-    return (
-      <tr class={this.classObject}>
-        {
-          Object.keys(this.cellData).length > 0 &&
-          Object.keys(this.cellData)
-            .map((key, idx) => {
-              return <SeTableCell {...this.$props} content={this.cellData[key]} />
-            })
-        }
-      </tr>
-    )
+  components: {
+    SeTableCell
   }
 }
+</script>

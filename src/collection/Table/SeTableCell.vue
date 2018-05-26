@@ -1,5 +1,26 @@
+<template>
+  <td :class="classObject">
+    <component :is="currentComponent"
+      type="text"
+      v-model="currentData"
+      @click="toggleEditable">
+      {{content}}
+    </component>
+  </td>
+</template>
+
+<script>
+import SeInput from '../../elements/Input/SeInput'
+
 export default {
   name: 'se-table-cell',
+  data () {
+    return {
+      currentComponent: 'span',
+      currentData: this.content
+    }
+  },
+
   props: {
     content: [String, Number, Object],
     positive: Boolean,
@@ -9,6 +30,14 @@ export default {
     active: Boolean,
     disabled: Boolean,
     editable: Boolean
+  },
+
+  methods: {
+    toggleEditable () {
+      if (this.editable) {
+        this.currentComponent = 'se-input'
+      }
+    }
   },
 
   computed: {
@@ -25,9 +54,9 @@ export default {
     }
   },
 
-  render (h) {
-    return (
-      <td class={this.classObject} domPropsInnerHTML={this.content}></td>
-    )
+  components: {
+    SeInput
   }
 }
+
+</script>

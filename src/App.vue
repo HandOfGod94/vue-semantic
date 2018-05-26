@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <se-table :table-data="dataToShow" />
+    <se-table :table-data="dataToShow" editable celled />
   </div>
 </template>
 
 <script>
-import SeTable from './collection/SeTable/SeTable'
+import SeTable from './collection/Table/SeTable'
 
 export default {
   name: 'App',

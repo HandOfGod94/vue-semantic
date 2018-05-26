@@ -1,5 +1,16 @@
-import SeTableHeader from './SeTableHeader'
-import SeTableRow from './SeTableRow'
+<template>
+  <table :class="classObject">
+    <se-table-header :headers="headers" />
+    <se-table-row v-for="(row, idx) in tableData" :key="idx"
+      :row-data="row"
+      :editable="editable"
+    />
+  </table>
+</template>
+
+<script>
+import SeTableHeader from './SeTableHeader.vue'
+import SeTableRow from './SeTableRow.vue'
 
 export default {
   name: 'se-table',
@@ -25,6 +36,7 @@ export default {
     size: String,
     searchable: Boolean,
     editable: Boolean,
+    tableHeader: Array,
     tableData: Array
   },
 
@@ -56,21 +68,32 @@ export default {
 
     headers () {
       let header = {}
-      if (this.tableData.length > 0) { header = Object.keys(this.tableData[0]) }
+      // if tableHeader prop is passed use that
+      // else keys of json objects will be the tableHeader
+      if (this.tableHeader && this.tableHeader.length > 0) {
+        header = this.tableHeader
+      } else if (this.tableData.length > 0) {
+        header = Object.keys(this.tableData[0])
+      }
       return header
     }
   },
 
-  render (h) {
-    return (
-      <table class={this.classObject}>
-        <SeTableHeader headers={this.headers} />
-        {
-          this.tableData.map((cellData, idx) => {
-            return <SeTableRow cellData={cellData} />
-          })
-        }
-      </table>
-    )
+  components: {
+    SeTableHeader,
+    SeTableRow
   }
+  // render (h) {
+  //   return (
+  //     <table class={this.classObject}>
+  //       <SeTableHeader headers={this.headers} />
+  //       {
+  //         this.tableData.map((cellData, idx) => {
+  //           return <SeTableRow cellData={cellData} />
+  //         })
+  //       }
+  //     </table>
+  //   )
+  // }
 }
+</script>
