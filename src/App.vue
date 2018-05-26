@@ -1,27 +1,33 @@
 <template>
   <div id="app">
-    <se-input v-model="inputData" name="test" placeholder-text="test" type="text" />
-    {{inputData}}
-    <se-input name="actiontest" placeholder-text="action test" type="text" action>
-      <se-button slot="rightAction">Search</se-button>
-    </se-input>
+    <se-table :table-data="dataToShow" />
   </div>
 </template>
 
 <script>
-import SeInput from './elements/Input/SeInput.js'
-import SeButton from './elements/Button/SeButton'
+import SeTable from './collection/SeTable/SeTable'
 
 export default {
   name: 'App',
   data () {
     return {
-      inputData: ''
+      dataToShow: [
+        {
+          name: 'Gahan',
+          age: '22',
+          company: 'JDA'
+        },
+        {
+          name: 'Rakholia',
+          age: '22',
+          company: 'jda'
+        }
+      ]
     }
   },
+
   components: {
-    SeInput,
-    SeButton
+    SeTable
   }
 }
 
