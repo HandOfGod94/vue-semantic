@@ -1,16 +1,11 @@
 <template>
   <div id="app">
-    <se-input v-model="inputData" name="test" placeholder-text="test" type="text" />
-    {{inputData}}
-    <se-input name="actiontest" placeholder-text="action test" type="text" action>
-      <se-button slot="rightAction">Search</se-button>
-    </se-input>
+    <se-header as="h2" icon="settings" content="Account Settings" subheader="Manage your preferences" />
   </div>
 </template>
 
 <script>
-import SeInput from './elements/Input/SeInput.js'
-import SeButton from './elements/Button/SeButton'
+import SeHeader from './elements/Header/SeHeader'
 
 export default {
   name: 'App',
@@ -20,8 +15,7 @@ export default {
     }
   },
   components: {
-    SeInput,
-    SeButton
+    SeHeader
   }
 }
 
