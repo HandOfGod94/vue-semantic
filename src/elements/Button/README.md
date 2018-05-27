@@ -2,7 +2,7 @@
 
 A button indicates a possible user action
 
-> Note: All * makred are required attributes
+> Note: All * marked are required attributes
 
 ## SeButton
 ### Name
@@ -42,7 +42,7 @@ A button indicates a possible user action
     <se-button as="div" icon="heart">Like</se-button>
   </se-button>
 
-### Exmaple
+### Example
 
 #### color
 ```html
