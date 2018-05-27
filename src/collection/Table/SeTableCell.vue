@@ -2,9 +2,8 @@
   <td :class="classObject">
     <component :is="currentComponent"
       type="text"
-      v-model="currentData"
-      @click="toggleEditable">
-      {{content}}
+      v-model="currentData">
+      {{currentData}}
     </component>
   </td>
 </template>
@@ -16,7 +15,6 @@ export default {
   name: 'se-table-cell',
   data () {
     return {
-      currentComponent: 'span',
       currentData: this.content
     }
   },
@@ -32,14 +30,6 @@ export default {
     editable: Boolean
   },
 
-  methods: {
-    toggleEditable () {
-      if (this.editable) {
-        this.currentComponent = 'se-input'
-      }
-    }
-  },
-
   computed: {
     classObject () {
       return {
@@ -51,6 +41,10 @@ export default {
         disabled: this.disabled,
         editable: this.editable
       }
+    },
+
+    currentComponent () {
+      return (this.editable) ? 'se-input' : 'span'
     }
   },
 
