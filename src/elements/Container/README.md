@@ -2,7 +2,7 @@
 
 A container limits content to a maximum width.
 
-> Note: All * makred are required attributes
+> Note: All * marked are required attributes
 
 ## SeContainer
 ### Name 
@@ -15,7 +15,7 @@ A container limits content to a maximum width.
 | [justified](#justified) | `false` | Boolean | Justify container text                                   |
 | [fluid](#fluid)         | `false` | Boolean | Container has no maximum width                           |
 
-### Exmaple
+### Example
 #### text
 ```html
 <se-container text>

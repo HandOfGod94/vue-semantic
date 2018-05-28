@@ -11,7 +11,8 @@ module.exports = {
           '/elements/Button/',
           '/elements/Container/',
           '/elements/Divider/',
-          '/elements/Header/'
+          '/elements/Header/',
+          '/elements/Image/'
         ]
       }
     ]

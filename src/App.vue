@@ -1,26 +1,26 @@
 <template>
   <div id="app">
-    <se-header as="h2" icon="settings" content="Account Settings" subheader="Manage your preferences" />
+    <se-image-group size="mini">
+      <se-image src="static/user.png"/>
+      <se-image src="static/user.png"/>
+      <se-image src="static/user.png"/>
+    </se-image-group>
   </div>
 </template>
 
 <script>
-import SeHeader from './elements/Header/SeHeader'
+import SeImage from './elements/Image/SeImage'
+import SeImageGroup from './elements/Image/SeImageGroup'
 
 export default {
   name: 'App',
-  data () {
-    return {
-      inputData: ''
-    }
-  },
   components: {
-    SeHeader
+    SeImage,
+    SeImageGroup
   }
 }
-
 </script>
 
 <style lang="postcss">
-@import 'semantic-ui-css/semantic.css';
+@import "semantic-ui-css/semantic.css";
 </style>

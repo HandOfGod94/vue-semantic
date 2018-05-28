@@ -15,7 +15,7 @@ export default {
     circular: Boolean,
     verticalAlign: String,
     centered: Boolean,
-    spaced: String,
+    spaced: [Boolean, String],
     float: String
   },
 
@@ -33,7 +33,7 @@ export default {
         circular: this.circular,
         [`${this.verticalAlign} aligned`]: this.verticalAlign,
         centered: this.centered,
-        [`${this.spaced} spaced`]: this.spaced,
+        [`${this.spaced} spaced`]: !!this.spaced,
         [`${this.float} floated`]: this.float,
         image: true
       }
