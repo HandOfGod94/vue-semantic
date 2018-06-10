@@ -1,22 +1,43 @@
 <template>
   <div id="app">
-    <se-image-group size="mini">
-      <se-image src="static/user.png"/>
-      <se-image src="static/user.png"/>
-      <se-image src="static/user.png"/>
-    </se-image-group>
+    <se-container>
+      <se-table :table-data="dataToShow" :table-meta="tableMeta" celled />
+    </se-container>
   </div>
 </template>
 
 <script>
-import SeImage from './elements/Image/SeImage'
-import SeImageGroup from './elements/Image/SeImageGroup'
+import SeTable from './collection/Table/SeTable'
+import SeContainer from './elements/Container/SeContainer'
+import TableMetadata from './meta/TableMetadata'
 
 export default {
   name: 'App',
+  data () {
+    return {
+      dataToShow: [
+        {
+          name: 'Gahan',
+          age: '22',
+          company: 'JDA'
+        },
+        {
+          name: 'Rakholia',
+          age: '22',
+          company: 'jda'
+        }
+      ],
+      tableMeta: new TableMetadata({
+        editRule: ({name, company}) => name === 'Rakholia' || company === 'JDA',
+        errorRule: ({age}) => age < 24,
+        warnRule: ({company}) => company === 'jda'
+      })
+    }
+  },
+
   components: {
-    SeImage,
-    SeImageGroup
+    SeTable,
+    SeContainer
   }
 }
 </script>
