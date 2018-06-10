@@ -83,17 +83,5 @@ export default {
     SeTableHeader,
     SeTableRow
   }
-  // render (h) {
-  //   return (
-  //     <table class={this.classObject}>
-  //       <SeTableHeader headers={this.headers} />
-  //       {
-  //         this.tableData.map((cellData, idx) => {
-  //           return <SeTableRow cellData={cellData} />
-  //         })
-  //       }
-  //     </table>
-  //   )
-  // }
 }
 </script>
