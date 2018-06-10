@@ -1,34 +1,21 @@
 <template>
   <tr :class="classObject">
-    <se-table-cell v-for="(headerKey, idx) in Object.keys(rowData)" :key="idx"
-      :content="rowData[headerKey]"
-      :editable="isEditable(headerKey)"
+    <se-table-cell v-for="(k, idx) in Object.keys(rowData)" :key="idx"
+      :content="rowData[k]"
+      :column="k"
     />
   </tr>
 </template>
 
 <script>
 import SeTableCell from './SeTableCell.vue'
-import TableMetadata from '../../meta/TableMetadata.ts'
 
 export default {
   name: 'se-table-row',
   props: {
-    positive: Boolean,
-    negative: Boolean,
-    error: Boolean,
-    warning: Boolean,
     active: Boolean,
     disabled: Boolean,
-    editable: Boolean,
-    rowData: [String, Number, Object],
-    meta: TableMetadata
-  },
-
-  methods: {
-    isEditable (header) {
-      return this.meta.isEditable(header)
-    }
+    rowData: [String, Number, Object]
   },
 
   computed: {
@@ -42,6 +29,7 @@ export default {
         disabled: this.disabled
       }
     }
+
   },
 
   components: {

@@ -3,7 +3,6 @@
     <se-table-header :headers="headers" />
     <se-table-row v-for="(row, idx) in tableData" :key="idx"
       :row-data="row"
-      :editable="editable"
     />
   </table>
 </template>
@@ -11,6 +10,11 @@
 <script>
 import SeTableHeader from './SeTableHeader.vue'
 import SeTableRow from './SeTableRow.vue'
+import TableMetadata from '../../meta/TableMetadata'
+import { SET_TABLE_DATA, SET_TABLE_META } from './TableStore'
+import { createNamespacedHelpers } from 'vuex'
+
+const { mapMutations } = createNamespacedHelpers('table')
 
 export default {
   name: 'se-table',
@@ -35,9 +39,21 @@ export default {
     padded: Boolean,
     size: String,
     searchable: Boolean,
-    editable: Boolean,
+    tableMeta: TableMetadata,
     tableHeader: Array,
     tableData: Array
+  },
+
+  methods: {
+    ...mapMutations({
+      SET_TABLE_DATA,
+      SET_TABLE_META
+    })
+  },
+
+  mounted () {
+    this.SET_TABLE_DATA(this.tableData)
+    this.SET_TABLE_META(this.tableMeta)
   },
 
   computed: {
@@ -73,6 +89,7 @@ export default {
       if (this.tableHeader && this.tableHeader.length > 0) {
         header = this.tableHeader
       } else if (this.tableData.length > 0) {
+        // Assume tableData is an array of json Object
         header = Object.keys(this.tableData[0])
       }
       return header

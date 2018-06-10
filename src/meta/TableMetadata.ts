@@ -14,11 +14,11 @@ export default class TableMetadata implements IMetadata {
     editableColumns: Array<string>,
     colDataType: Array<string>
   }) {
-    this.errorRule = errorRule
-    this.editRule = editRule
-    this.warnRule = warnRule
-    this.editableColumns = editableColumns
-    this.colDataType = colDataType
+    this.errorRule = (errorRule)? errorRule: (x: any) => false
+    this.editRule = (editRule)? editRule: (x: any) => false
+    this.warnRule = (warnRule)? warnRule: (x: any) => false
+    this.editableColumns = (editableColumns)? editableColumns: [],
+    this.colDataType = (colDataType)? colDataType: []
   }
 
   hasError(val: any): boolean {
@@ -34,10 +34,12 @@ export default class TableMetadata implements IMetadata {
    * editRule.
    * The result is true if editRule results in true or if it is editable
    * column
-   * @param val String of header/key
+   * @param {any} val String of header/key
    * @returns `true` if editRule satisfies or if column is editable, `false` otherwise
    */
-  isEditable(val: string): boolean {
-    return this.isEditable(val) || this.editableColumns.indexOf(val) > 0
+  isEditable(val: any): boolean {
+    if (Object.keys(val).length > 0)
+      return this.editRule(val) || this.editableColumns.includes(Object.keys(val)[0])
+    return this.editRule(val)
   }
 }
