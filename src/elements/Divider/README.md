@@ -2,7 +2,7 @@
 
 A divider visually segments content into groups
 
-> Note: All * makred are required attributes
+> Note: All * marked are required attributes
 
 ## SeDivider
 ### Name 

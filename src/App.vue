@@ -40,9 +40,8 @@ export default {
     SeContainer
   }
 }
-
 </script>
 
 <style lang="postcss">
-@import 'semantic-ui-css/semantic.css';
+@import "semantic-ui-css/semantic.css";
 </style>

@@ -10,7 +10,9 @@ module.exports = {
         children: [
           '/elements/Button/',
           '/elements/Container/',
-          '/elements/Divider/'
+          '/elements/Divider/',
+          '/elements/Header/',
+          '/elements/Image/'
         ]
       }
     ]
