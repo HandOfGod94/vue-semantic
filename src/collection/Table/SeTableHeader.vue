@@ -1,6 +1,8 @@
 <template>
   <thead :class="classObject">
-    <th v-for="(head,idx) in headers" :key="idx">{{head}}</th>
+    <slot>
+      <th v-for="(head,idx) in headers" :key="idx">{{head}}</th>
+    </slot>
   </thead>
 </template>
 

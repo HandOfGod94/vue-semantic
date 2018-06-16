@@ -1,43 +1,49 @@
 <template>
   <div id="app">
     <se-container>
-      <se-table :table-data="dataToShow" :table-meta="tableMeta" celled />
+      <se-table celled structured>
+        <se-table-header>
+          <tr>
+            <th rowspan="2">Name</th>
+            <th rowspan="2">Types</th>
+            <th rowspan="2">Files</th>
+            <th colspan="3">Languages</th>
+          </tr>
+          <tr>
+            <th>Ruby</th>
+            <th>Python</th>
+            <th>JS</th>
+          </tr>
+        </se-table-header>
+        <se-table-row>
+          <se-table-cell>Alpha Team</se-table-cell>
+          <se-table-cell>Project 1</se-table-cell>
+          <se-table-cell align="right">2</se-table-cell>
+          <se-table-cell align="center" colspan="2">
+            <i class="large green checkmark icon"></i>
+          </se-table-cell>
+          <se-table-cell />
+        </se-table-row>
+      </se-table>
     </se-container>
   </div>
 </template>
 
 <script>
-import SeTable from './collection/Table/SeTable'
 import SeContainer from './elements/Container/SeContainer'
-import TableMetadata from './meta/TableMetadata'
+import SeTable from './collection/Table/SeTable.vue'
+import SeTableCell from './collection/Table/SeTableCell.vue'
+import SeTableHeader from './collection/Table/SeTableHeader.vue'
+import SeTableRow from './collection/Table/SeTableRow.vue'
 
 export default {
   name: 'App',
-  data () {
-    return {
-      dataToShow: [
-        {
-          name: 'Gahan',
-          age: '22',
-          company: 'JDA'
-        },
-        {
-          name: 'Rakholia',
-          age: '22',
-          company: 'jda'
-        }
-      ],
-      tableMeta: new TableMetadata({
-        editRule: ({name, company}) => name === 'Rakholia' || company === 'JDA',
-        errorRule: ({age}) => age < 24,
-        warnRule: ({company}) => company === 'jda'
-      })
-    }
-  },
-
   components: {
+    SeContainer,
     SeTable,
-    SeContainer
+    SeTableCell,
+    SeTableHeader,
+    SeTableRow
   }
 }
 </script>

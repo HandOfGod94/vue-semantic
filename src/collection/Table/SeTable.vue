@@ -1,9 +1,11 @@
 <template>
   <table :class="classObject">
-    <se-table-header :headers="headers" />
-    <se-table-row v-for="(row, idx) in tableData" :key="idx"
-      :row-data="row"
-    />
+    <slot>
+      <se-table-header :headers="headers" />
+      <se-table-row v-for="(row, idx) in data" :key="idx"
+        :row-data="row"
+        :row-num="idx"/>
+    </slot>
   </table>
 </template>
 
@@ -14,7 +16,7 @@ import TableMetadata from '../../meta/TableMetadata'
 import { SET_TABLE_DATA, SET_TABLE_META } from './TableStore'
 import { createNamespacedHelpers } from 'vuex'
 
-const { mapMutations } = createNamespacedHelpers('table')
+const { mapState, mapMutations } = createNamespacedHelpers('table')
 
 export default {
   name: 'se-table',
@@ -46,17 +48,23 @@ export default {
 
   methods: {
     ...mapMutations({
-      SET_TABLE_DATA,
-      SET_TABLE_META
+      setTableData: SET_TABLE_DATA,
+      setTableMeta: SET_TABLE_META
     })
   },
 
   mounted () {
-    this.SET_TABLE_DATA(this.tableData)
-    this.SET_TABLE_META(this.tableMeta)
+    if (!this.$slots.default) {
+      this.setTableData(this.tableData)
+      this.setTableMeta(this.tableMeta)
+    }
   },
 
   computed: {
+    ...mapState({
+      data: tableState => tableState.data
+    }),
+
     classObject () {
       return {
         ui: true,
@@ -88,7 +96,7 @@ export default {
       // else keys of json objects will be the tableHeader
       if (this.tableHeader && this.tableHeader.length > 0) {
         header = this.tableHeader
-      } else if (this.tableData.length > 0) {
+      } else if (this.tableData && this.tableData.length > 0) {
         // Assume tableData is an array of json Object
         header = Object.keys(this.tableData[0])
       }
