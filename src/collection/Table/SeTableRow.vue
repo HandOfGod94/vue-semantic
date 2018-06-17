@@ -1,9 +1,13 @@
 <template>
   <tr :class="classObject">
-    <se-table-cell v-for="(k, idx) in Object.keys(rowData)" :key="idx"
-      :content="rowData[k]"
-      :column="k"
-    />
+    <slot>
+      <se-table-cell
+        v-for="(k, idx) in columns" :key="idx"
+        :content="rowData[k]"
+        :column="k"
+        :row-num="rowNum"
+      />
+    </slot>
   </tr>
 </template>
 
@@ -15,7 +19,12 @@ export default {
   props: {
     active: Boolean,
     disabled: Boolean,
-    rowData: [String, Number, Object]
+    error: Boolean,
+    warning: Boolean,
+    positive: Boolean,
+    negative: Boolean,
+    rowData: [String, Number, Object],
+    rowNum: Number
   },
 
   computed: {
@@ -28,6 +37,14 @@ export default {
         active: this.active,
         disabled: this.disabled
       }
+    },
+
+    columns () {
+      let k = []
+      if (this.rowData && Object.keys(this.rowData).length > 0) {
+        k = Object.keys(this.rowData)
+      }
+      return k
     }
 
   },

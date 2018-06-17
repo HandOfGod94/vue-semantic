@@ -1,41 +1,54 @@
 <template>
   <td :class="classObject">
-    <component :is="currentComponent"
-      type="text"
-      fluid
-      v-model="currentData">
-      {{currentData}}
-    </component>
+    <slot>
+      <component :is="currentComponent"
+        type="text"
+        fluid
+        v-model="currentData">
+        {{currentData}}
+      </component>
+    </slot>
   </td>
 </template>
 
 <script>
 import SeInput from '../../elements/Input/SeInput'
 import { createNamespacedHelpers } from 'vuex'
+import { SET_TABLE_DATA, UPDATE_TABLE_DATA } from './TableStore'
 
-const { mapState } = createNamespacedHelpers('table')
+const { mapState, mapMutations } = createNamespacedHelpers('table')
 
 export default {
   name: 'se-table-cell',
-  data () {
-    return {
-      currentData: this.content
-    }
-  },
 
   props: {
     content: [String, Number, Object],
-    column: {type: String, required: true},
+    column: String,
+    rowNum: Number,
     positive: Boolean,
     negative: Boolean,
     error: Boolean,
     warning: Boolean,
     active: Boolean,
     disabled: Boolean,
-    editable: Boolean
+    editable: Boolean,
+    align: String
+  },
+
+  methods: {
+    ...mapMutations({
+      setTableData: SET_TABLE_DATA,
+      updateTableData: UPDATE_TABLE_DATA
+    })
   },
 
   computed: {
+
+    ...mapState({
+      tableData: tableState => tableState.tableData,
+      tableMeta: tableState => tableState.tableMeta
+    }),
+
     classObject () {
       return {
         positive: this.positive,
@@ -44,15 +57,16 @@ export default {
         warning: this.metaWarning,
         active: this.active,
         disabled: this.disabled,
-        editable: this.metaEditable
+        editable: this.metaEditable,
+        [`${this.align} aligned`]: this.align
       }
     },
 
     metaEditable () {
       let isEditable = false
       let val = { [this.column]: this.content }
-      if (this.meta) {
-        isEditable = this.meta.isEditable(val)
+      if (this.tableMeta) {
+        isEditable = this.tableMeta.isEditable(val)
       }
       return isEditable || this.editable
     },
@@ -60,14 +74,18 @@ export default {
     metaError () {
       let isError = false
       let val = { [this.column]: this.content }
-      isError = this.meta.hasError(val)
+      if (this.tableMeta) {
+        isError = this.tableMeta.hasError(val)
+      }
       return isError || this.error
     },
 
     metaWarning () {
       let isWarning = false
       let val = { [this.column]: this.content }
-      isWarning = this.meta.hasWarning(val)
+      if (this.tableMeta) {
+        isWarning = this.tableMeta.hasWarning(val)
+      }
       return isWarning || this.warning
     },
 
@@ -75,9 +93,18 @@ export default {
       return this.metaEditable ? 'se-input' : 'span'
     },
 
-    ...mapState({
-      meta: tableState => tableState.meta
-    })
+    currentData: {
+      get () {
+        return this.content
+      },
+      set (value) {
+        this.updateTableData({
+          rowIdx: this.rowNum,
+          colHead: this.column,
+          data: value
+        })
+      }
+    }
   },
 
   components: {
