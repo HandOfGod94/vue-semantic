@@ -45,8 +45,8 @@ export default {
   computed: {
 
     ...mapState({
-      data: tableState => tableState.data,
-      meta: tableState => tableState.meta
+      tableData: tableState => tableState.tableData,
+      tableMeta: tableState => tableState.tableMeta
     }),
 
     classObject () {
@@ -65,8 +65,8 @@ export default {
     metaEditable () {
       let isEditable = false
       let val = { [this.column]: this.content }
-      if (this.meta) {
-        isEditable = this.meta.isEditable(val)
+      if (this.tableMeta) {
+        isEditable = this.tableMeta.isEditable(val)
       }
       return isEditable || this.editable
     },
@@ -74,8 +74,8 @@ export default {
     metaError () {
       let isError = false
       let val = { [this.column]: this.content }
-      if (this.meta) {
-        isError = this.meta.hasError(val)
+      if (this.tableMeta) {
+        isError = this.tableMeta.hasError(val)
       }
       return isError || this.error
     },
@@ -83,8 +83,8 @@ export default {
     metaWarning () {
       let isWarning = false
       let val = { [this.column]: this.content }
-      if (this.meta) {
-        isWarning = this.meta.hasWarning(val)
+      if (this.tableMeta) {
+        isWarning = this.tableMeta.hasWarning(val)
       }
       return isWarning || this.warning
     },

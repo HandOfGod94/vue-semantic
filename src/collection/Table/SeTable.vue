@@ -62,7 +62,7 @@ export default {
 
   computed: {
     ...mapState({
-      data: tableState => tableState.data
+      data: tableState => tableState.tableData
     }),
 
     classObject () {

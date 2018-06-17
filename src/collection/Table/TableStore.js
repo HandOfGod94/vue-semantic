@@ -6,10 +6,10 @@ export const UPDATE_TABLE_DATA = 'UPDATE_TABLE_DATA'
 
 const state = {
   // the data for table to display
-  data: [],
+  tableData: [],
 
   // table meta for state
-  meta: new TableMetadata({
+  tableMeta: new TableMetadata({
     editableColumns: [],
     colDataType: []
   })
@@ -21,19 +21,19 @@ const mutations = {
   /**
    * Sets state.data with passed payload
    * @param state Vuex store state object
-   * @param {[]} data Array of data object of table (payload)
+   * @param {[]} tableData Array of data object of table (payload)
    */
-  [SET_TABLE_DATA] (state, data) {
-    state.data = data
+  [SET_TABLE_DATA] (state, tableData) {
+    state.tableData = tableData
   },
 
   /**
    * Sets state.meta with passed payload
    * @param state Vuex store state object
-   * @param {TableMetadata} meta The meta object for table
+   * @param {TableMetadata} tableMeta The meta object for table
    */
-  [SET_TABLE_META] (state, meta) {
-    state.meta = meta
+  [SET_TABLE_META] (state, tableMeta) {
+    state.tableMeta = tableMeta
   },
 
   /**

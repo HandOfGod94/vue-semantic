@@ -41,7 +41,9 @@ export default {
 
     columns () {
       let k = []
-      if (this.rowData && Object.keys(this.rowData).length > 0) { k = Object.keys(this.rowData) }
+      if (this.rowData && Object.keys(this.rowData).length > 0) {
+        k = Object.keys(this.rowData)
+      }
       return k
     }
 

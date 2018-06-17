@@ -26,6 +26,9 @@
         </se-table-row>
       </se-table>
     </se-container>
+    <se-container>
+      <se-table celled :table-meta="dataMeta" :table-data="dataToShow" />
+    </se-container>
   </div>
 </template>
 
@@ -35,9 +38,25 @@ import SeTable from './collection/Table/SeTable.vue'
 import SeTableCell from './collection/Table/SeTableCell.vue'
 import SeTableHeader from './collection/Table/SeTableHeader.vue'
 import SeTableRow from './collection/Table/SeTableRow.vue'
+import TableMetadata from './meta/TableMetadata'
 
 export default {
   name: 'App',
+
+  data () {
+    return {
+      dataToShow: [
+        {name: 'Gahan', age: 22, company: 'JDA'},
+        {name: 'Rakholia', age: 24, company: 'JDA'}
+      ],
+      dataMeta: new TableMetadata({
+        editRule: ({name}) => name === 'Gahan',
+        warnRule: ({age}) => age < 23,
+        editableColumns: ['age']
+      })
+    }
+  },
+
   components: {
     SeContainer,
     SeTable,
